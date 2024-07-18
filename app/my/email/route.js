@@ -59,6 +59,6 @@ export async function POST(req) {
         resolve(info);
       }
     });
-    return Response.json({ message: "Email sent!" });
   });
+  return Response.json({ message: "Email sent!" });
 }

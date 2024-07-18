@@ -2,7 +2,7 @@
 
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import test from "../../thejsons/test-quote.json";
+import quotes from "../../thejsons/test-quote.json";
 
 export default function Page() {
   const handleSubmit = () => {
@@ -22,7 +22,7 @@ export default function Page() {
     );
 
     var myIntervals = setInterval(async function () {
-      const currentQuote = test[arrayIndex++];
+      const currentQuote = quotes[arrayIndex++];
       const fName = currentQuote.Contact.split(" ")[0].toLowerCase();
       const upper = fName.charAt(0).toUpperCase() + fName.slice(1);
 

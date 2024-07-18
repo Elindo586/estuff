@@ -1,5 +1,6 @@
-export default async function stuff(req, res) {
-  let nodemailer = require("nodemailer");
+import nodemailer from "nodemailer";
+
+export async function POST(req) {
   const transporter = nodemailer.createTransport({
     service: "Outlook365",
     auth: {
@@ -21,11 +22,12 @@ export default async function stuff(req, res) {
     });
   });
 
-  const nameFull = req.body.contact;
-  const nameFirst = req.body.upper;
-  const email = req.body.email;
-  const title = req.body.id;
-  const quote = req.body.quote;
+  const body = await req.json();
+  const nameFull = body.contact;
+  const nameFirst = body.upper;
+  const email = body.email;
+  const title = body.id;
+  const quote = body.quote;
 
   const textArray = quote;
   const contents = textArray
@@ -57,6 +59,6 @@ export default async function stuff(req, res) {
         resolve(info);
       }
     });
-    return res.status(200).json({ message: "Email sent!" });
+    return Response.json({ message: "Email sent!" });
   });
 }

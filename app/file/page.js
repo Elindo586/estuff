@@ -4,8 +4,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import test from "../../thejsons/test-quote.json";
 
-export default function POST(request) {
-  const handleSubmit = async () => {
+export async function POST() {
+  const handleSubmit = () => {
     const d = new Date();
     const month = d.getMonth();
     const days = d.getDate();

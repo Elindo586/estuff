@@ -47,6 +47,12 @@ export async function POST(req) {
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: `${text}`,
     html: `<div><pre>${text}</pre></div>`,
+    dsn: {
+      id: `${nameFull} | ${title}`,
+      return: "headers",
+      notify: "success",
+      recipient: `${email}`,
+    },
   };
 
   await new Promise((resolve, reject) => {

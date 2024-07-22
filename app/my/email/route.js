@@ -28,6 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
+  const img = body.img;
 
   const textArray = quote;
   const contents = textArray
@@ -45,8 +46,9 @@ export async function POST(req) {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
     subject: `cotizaciones para ${nameFull} | ${title}`,
-    text: `${text}`,
-    html: `<div><pre>${text}</pre></div>`,
+    text: ``,
+    html: `<div><pre>${text} </pre></div>
+    <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>`,
     dsn: {
       id: `${nameFull} | ${title}`,
       return: "headers",

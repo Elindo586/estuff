@@ -32,6 +32,7 @@ export default function Page() {
         quote: currentQuote.quote,
         id: currentQuote.id,
         upper: upper,
+        img: currentQuote.img,
       };
 
       console.log(data);

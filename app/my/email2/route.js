@@ -34,8 +34,7 @@ export async function POST(req) {
   const contents = textArray
     .map(
       ({ QuoteN, ItemCode, ItemName, Qty, Price, ExtPrice, LeadTime }) =>
-        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Descrition: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}\n \n
-      `
+        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Descrition: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}\n \n`
     )
     .join("\n");
 
@@ -48,12 +47,7 @@ export async function POST(req) {
     to: email,
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
-    html: `<div>
-  <di> Hello ${nameFirst},</div>
-  <div> Todo bien con esta cotizacion?  Necesita algo ma? </div>
-    <div>${contents} </div>
-   
-    </div>
+    html: `<div><pre>${text} </pre></div>
     <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>`,
     dsn: {
       id: `${nameFull} | ${title}`,

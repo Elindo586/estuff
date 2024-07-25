@@ -33,5 +33,18 @@ export async function GET(_, { params }) {
     });
   });
 
-  return new Response(`The pixel id is ${pixelId}`);
+  const htmlResponse = `
+      <html>
+        <body style = "color: blue">
+          <div>
+            <div> <h1> Hello There, </h1> </div>
+            <div> Your email: ${pixelId} is good. </div>
+          </div>
+        </body>
+      </html>
+    `;
+
+  return new Response(htmlResponse, {
+    headers: { "Content-Type": "text/html" },
+  });
 }

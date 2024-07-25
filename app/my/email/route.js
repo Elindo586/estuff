@@ -52,6 +52,7 @@ export async function POST(req) {
   <di> Hello ${nameFirst},</div>
   <div> Todo bien con esta cotizacion?  Necesita algo ma? </div>
     <div>${contents} </div>
+    <div> <a href= "http://localhost:3000/my/file/${`email`} "> test </a> </div>
    
     </div>
     <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>`,

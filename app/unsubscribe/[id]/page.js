@@ -4,7 +4,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import quotes from "../../thejsons/test-quote-new.json";
 
-export default function Page2() {
+export default function Page() {
   const handleSubmit = () => {
     const d = new Date();
     const month = d.getMonth();

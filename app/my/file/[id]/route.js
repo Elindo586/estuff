@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 
 export async function GET(_, { params }) {
-  const pixelId = params.id;
+  const userEmail = params.id;
 
   const transporter = nodemailer.createTransport({
     service: "Outlook365",
@@ -14,7 +14,7 @@ export async function GET(_, { params }) {
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: "info@tu.biz",
-    subject: `We got feedback from ${pixelId}`,
+    subject: `We got feedback from ${userEmail}`,
     text: ``,
     html: `<div>
             <di> Hello There,</div>
@@ -38,7 +38,7 @@ export async function GET(_, { params }) {
         <body style = "color: blue">
           <div>
             <div> <h1> Hello There, </h1> </div>
-            <div> Your email: ${pixelId} is good. </div>
+            <div> Your email: ${userEmail} is good. </div>
           </div>
         </body>
       </html>

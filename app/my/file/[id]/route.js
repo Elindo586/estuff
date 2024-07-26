@@ -12,13 +12,13 @@ export async function GET(_, { params }) {
   });
 
   const mailData = {
-    from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
+    from: { name: "Edgar Lindo1", address: process.env.EMAIL2 },
     to: "info@tu.biz",
     subject: `We got feedback from ${userEmail}`,
     text: ``,
     html: `<div>
             <di> Hello There,</div>
-            <div> This is a test </div>
+            <div> This guy wants to be unsubscribe ${userEmail} </div>
           </div>`,
   };
   await new Promise((resolve, reject) => {

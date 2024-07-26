@@ -82,7 +82,7 @@ export default function Page() {
   return (
     <div>
       <div className="col-md-12 main-contact-form-div">
-        <h4 className="get-in-touch">Get in touch.</h4>
+        <h4 className="get-in-touch">Get in touch now.</h4>
         <br />
         <br />
         <button className="btn btn-primary form-button" onClick={handleSubmit}>

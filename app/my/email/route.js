@@ -49,10 +49,10 @@ export async function POST(req) {
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
     html: `<div>
-  <di> Hello ${nameFirst},</div>
+  <di> Hello! ${nameFirst},</div>
   <div> Todo bien con esta cotizacion?  Necesita algo ma? </div>
     <div>${contents} </div>
-    <div> <a href= "https://email.tu.biz/my/file/${`email`} "> unsubscribe here </a> </div>
+    <div> <a href= "https://email.tu.biz/my/file/${email} "> unsubscribe here </a> </div>
    
     </div>
     <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>`,

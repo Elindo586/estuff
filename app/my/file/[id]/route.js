@@ -13,7 +13,7 @@ export async function GET(_, { params }) {
 
   const mailData = {
     from: { name: "Edgar Lindo1", address: process.env.EMAIL2 },
-    to: "info@tu.biz",
+    to: "edgar@tu.biz",
     subject: `We got feedback from ${userEmail}`,
     text: ``,
     html: `<div>

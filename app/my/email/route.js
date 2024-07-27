@@ -34,28 +34,36 @@ export async function POST(req) {
   const contents = textArray
     .map(
       ({ QuoteN, ItemCode, ItemName, Qty, Price, ExtPrice, LeadTime }) =>
-        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Descrition: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}\n \n
-      `
+        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Description: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}
+    `
     )
     .join("\n");
 
-  const text = `Hola ${nameFirst},\n\nTodo bien con su cotizacion? Necesita algo mas? \n \n${contents} \n \nSaludos, \n \nEdgar \n`;
+  // const text = `Hola ${nameFirst},\n\nTodo bien con su cotizacion? Necesita algo mas? \n \n${contents} \n \nSaludos, \n \nEdgar \n`;
 
-  console.log(text);
+  // console.log(text);
 
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
-    html: `<div>
-  <di> Hello! ${nameFirst},</div>
-  <div> Todo bien con esta cotizacion?  Necesita algo ma? </div>
-    <div>${contents} </div>
-    <div> <a href= "https://email.tu.biz/my/file/${email} "> unsubscribe here </a> </div>
+    html: `
+    <div> 
+    <div>Hola ${nameFirst},</div> <br>
+
+    <div>Todo bien con su cotizacion? Necesita algo más?</div> <br>
+
+    
+    <div><pre>${contents}</pre></div>
+    <div> Saludos, </div> <br>
+    <div> Edgar </div> <br>
+      
+    <div> <a href= "https://email.tu.biz/my/un/${email} "> unsubscribe here </a> </div>
    
+    <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>
     </div>
-    <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>`,
+    `,
     dsn: {
       id: `${nameFull} | ${title}`,
       return: "headers",

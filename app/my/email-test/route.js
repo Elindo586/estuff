@@ -52,254 +52,111 @@ export async function POST(req) {
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
     html: `
-    <!DOCTYPE html> 
-    <html> 
-    <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Email</title>
-    <style>
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
+   <!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Email</title>
+  <style>
+    @media only screen and (max-width: 1000px) {
+      .container {
+        width: 100% !important;
+        padding: 0 !important;
+      }
+      .social-icons img {
+        width: 24px !important;
+        height: 24px !important;
+      }
+    }
 
-/* For mobile phones: */
-[class*="col-"] {
-  width: 100%;
-}
-
-@media only screen and (min-width: 600px) {
-  /* For tablets: */
-  .col-s-1 {
-    width: 8.33% !important;
-  }
-  .col-s-2 {
-    width: 16.66% !important;
-  }
-  .col-s-3 {
-    width: 25% !important;
-  }
-  .col-s-4 {
-    width: 33.33% !important;
-  }
-  .col-s-5 {
-    width: 41.66%  !important;
-  }
-  .col-s-6 {
-    width: 50% !important;
-  }
-  .col-s-7 {
-    width: 58.33% !important;
-  }
-  .col-s-8 {
-    width: 66.66%   !important;
-  }
-  .col-s-9 {
-    width: 75% !important;
-  }
-  .col-s-10 {
-    width: 83.33% !important;
-  }
-  .col-s-11 {
-    width: 91.66% !important;
-  }
-  .col-s-12 {
-    width: 100% !important;
-  }
-}
-@media only screen and (min-width: 768px) {
-  /* For desktop: */
-  .col-1 {
-    width: 8.33% !important;
-  }
-  .col-2 {
-    width: 16.66% !important;
-  }
-  .col-3 {
-    width: 25% !important;
-  }
-  .col-4 {
-    width: 33.33% !important;
-  }
-  .col-5 {
-    width: 41.66% !important;
-  }
-  .col-6 {
-    width: 50% !important;
-  }
-  .col-7 {
-    width: 58.33% !important;
-  }
-  .col-8 {
-    width: 66.66% !important;
-  }
-  .col-9 {
-    width: 75% !important;
-  }
-  .col-10 {
-    width: 83.33% !important;
-  }
-  .col-11 {
-    width: 91.66% !important;
-  }
-  .col-12 {
-    width: 100% !important;
-  }
-}
-.row::after {
-  content: "";
-  clear: both;
-  display: table;
-}
-[class*="col-"] {
-  float: left;
-  padding: 15px;
-}
-
-.email-main {
-  background-color: whitesmoke;
-  width: auto;
-  height: auto;
-  padding: 1em;
-  border-radius: 10px;
-  position: relative;
-  margin-bottom: 1em;
-}
-
-.email-content {
-  background-color: lightblue;
-  position: relative;
-  padding: 1em;
-  height: auto;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1em;
-}
-
-.email-social {
-  background-color: whitesmoke;
-  position: relative;
-  padding-top: 0.5em;
-  height: auto;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.1em;
-  text-align: center;
-  overflow: auto;
-}
-.social-meddia-text {
-  color: grey;
-}
-.email-social-icons {
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  overflow: auto;
-}
-.email-footer {
-  background-color: whitesmoke;
-  position: relative;
-  padding: 0.5em;
-  height: auto;
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 0.5em;
-  text-align: center;
-  font-size: 10px;
-}
-.email-footer-text {
-  color: grey;
-  margin-bottom: 0.05em;
-}
-
-</style>
-    </head>
-    <body>
-    <div class="email-main">
-      <div class="email-content">
-        <h1>Thanks for signing up!</h1>
-        <p>We'll be in touch soon with more information about our campaign.</p>
-      </div>
-      <div class="email-content row">
-        <div class="col-6 col-s-12">
-          <h1>Thanks for signing up!</h1>
-        </div>
-        <div class="col-6 col-s-12">
-          <p>
-            We'll be in touch soon with more information about our campaign.
-          </p>
-        </div>
-      </div>
-      <br />
-      <div class="email-social">
-        <p class="social-media-text"> Social Media Follow</p>
-        <div class="col-12 col-s-12 email-social-icons">
-         
-            <a href="https://www.linkedin.com/in/edgarlindo/">
-              <img src=   />
-            </a>
-            
-          &nbsp; &nbsp;
-         
-            <a href="https://www.youtube.com/@EdgarLindo">
-              <img src=   />
-            </a>
-           
-          &nbsp; &nbsp;
-         
-            <a href="https://www.snapchat.com/add/elindo586">
-              <img src=   />
-            </a>
-            
-          &nbsp; &nbsp;
-         
-            <a href="https://www.instagram.com/mredgarlindo">
-             img src=   />
-            </a>
-          
-          &nbsp; &nbsp;
-          
-            <a href="https://www.tiktok.com/@theedgarlindo">
-             img src=   />
-            </a>
-           
-          &nbsp; &nbsp;
-          
-            <a href="https://www.facebook.com/theedgarlindo">
-              img src=   />
-            </a>
-            
-        </div>
-      </div>
-      <br />
-
-      <div class="email-footer">
-        <p class="email-footer-text">
-          ${year} Edgar Lindo, all rights reserved.
-        </p>
-        <p class="email-footer-text">This email was sent to: ${email}</p>
-        <p class="email-footer-text">
-          This email was sent by: Edgar Lindo | 4 N Rammer | Arglington Heights
-          IL 60004 | USA
-        </p>
-        <p>
-          To unsubscribe
-          <a href="https://email.tu.biz/my/un/${email} ">click here</a>
-        </p>
-      </div>
-    </div>
-    </body>
-    </html>
     
+  </style>
+</head>
+<body style="font-family: Arial, sans-serif; background-color: whitesmoke; margin: 0; padding: 0;">
+  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: whitesmoke; padding: 20px;">
+    <tr>
+      <td align="center">
+        <!-- Main Container -->
+        <table width="1000" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: lightblue; margin-bottom: .3em; border-radius: 10px; padding: 1em;">
+          <tr>
+            <td>
+              <h1 style="margin: 0;">Thanks for signing up!</h1>
+              <p style="margin: 0;">We'll be in touch soon with more information about our campaign.</p>
+            </td>
+          </tr>
+        </table>
+        <!-- Two Column Layout -->
+        <table width="1000" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: lightblue; margin-bottom: .3em; border-radius: 10px; padding: 1em;">
+          <tr>
+            <td width="50%" style="vertical-align: top;">
+              <h1 style="margin: 0;">Thanks for signing up!</h1>
+            </td>
+            <td width="50%" style="vertical-align: top;">
+              <p style="margin: 0;">We'll be in touch soon with more information about our campaign.</p>
+            </td>
+          </tr>
+        </table>
+        <!-- Social Media -->
+       <table width="400" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: whitesmoke; margin: auto; padding-top: 0.5em; text-align: center;">
+  <tr>
+    <td colspan="6">
+      <p style="color: grey; margin-bottom: .5em;">Social Media Follow</p>
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center;">
+      <a href="https://www.linkedin.com/in/edgarlindo/">
+        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin.png&w=1920&q=75" alt="LinkedIn" style="border: 0; display: block; width: 24px; height: 24px;" />
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.youtube.com/@EdgarLindo">
+        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube16.png&w=1920&q=75" alt="YouTube" style="border: 0; display: block; width: 24px; height: 24px;" />
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.snapchat.com/add/elindo586">
+        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat.png&w=1920&q=75" alt="Snapchat" style="border: 0; display: block; width: 24px; height: 24px;" />
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.instagram.com/mredgarlindo">
+        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram.png&w=1920&q=75" alt="Instagram" style="border: 0; display: block; width: 24px; height: 24px;" />
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.tiktok.com/@theedgarlindo">
+        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok.png&w=1920&q=75" alt="TikTok" style="border: 0; display: block; width: 24px; height: 24px;" />
+      </a>
+    </td>
+    <td style="text-align: center;">
+      <a href="https://www.facebook.com/theedgarlindo">
+        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook.png&w=1920&q=75" alt="Facebook" style="border: 0; display: block; width: 24px; height: 24px;" />
+      </a>
+    </td>
+  </tr>
+</table>
+
+        <!-- Footer -->
+        <table width="1000" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: whitesmoke; margin: auto; padding: 0.5em; text-align: center; font-size: 10px;">
+          <tr>
+            <td>
+              <p style="color: grey; margin: 0 0 0.5em;">${year} Edgar Lindo, all rights reserved.</p>
+              <p style="color: grey; margin: 0 0 0.5em;">This email was sent to: ${email}</p>
+              <p style="color: grey; margin: 0 0 0.5em;">This email was sent by: Edgar Lindo | 4 N Rammer | Arglington Heights IL 60004 | USA</p>
+              <p style="color: grey; margin: 0 0 0.5em;">
+                To unsubscribe <a href="https://email.tu.biz/my/un/${email}" style="color: #007bff;">click here</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</body>
+</html>
+
     `,
     dsn: {
       id: `${nameFull} | ${title}`,

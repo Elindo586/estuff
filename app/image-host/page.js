@@ -9,72 +9,72 @@ export default function Page() {
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/facebook.png"
+          src="/images/social-icons/facebook24.png"
           alt="facebook icon"
           title="facebook link"
           id="facebook"
-          // width={16}
-          // height={16}
+          // width={24}
+          // height={24}
           sizes="100vw"
         />
       </div>
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/instagram.png"
+          src="/images/social-icons/instagram24.png"
           alt="instagram icon"
           title="instagram link"
           id="facebook"
-          // width={16}
-          // height={16}
+          // width={24}
+          // height={24}
           sizes="100vw"
         />
       </div>
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/linkedin.png"
+          src="/images/social-icons/linkedin24.png"
           alt="linkedin icon"
           title="linkedin link"
           id="facebook"
-          // width={16}
-          // height={16}
+          // width={24}
+          // height={24}
           sizes="100vw"
         />
       </div>
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/snapchat.png"
+          src="/images/social-icons/snapchat24.png"
           alt="snapchat icon"
           title="snapchat link"
           id="facebook"
-          // width={16}
-          // height={16}
+          // width={24}
+          // height={24}
           sizes="100vw"
         />
       </div>
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/tiktok.png"
+          src="/images/social-icons/tiktok24.png"
           alt="tiktok icon"
           title="tiktok link"
           id="facebook"
-          // width={16}
-          // height={16}
+          // width={24}
+          // height={24}
           sizes="100vw"
         />
       </div>
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/youtube16.png"
+          src="/images/social-icons/youtube24.png"
           alt="youtube icon"
           title="youtube link"
           id="facebook"
-          // width={16}
-          // height={16}
+          // width={24}
+          // height={24}
           sizes="100vw"
         />
       </div>

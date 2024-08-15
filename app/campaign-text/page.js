@@ -6,7 +6,9 @@ export default function Page() {
     <div className="email-main">
       <div className="email-content">
         <h1>Thanks for signing up!</h1>
-        <p>We'll be in touch soon with more information about our campaign.</p>
+        <p>
+          We&apos;ll be in touch soon with more information about our campaign.
+        </p>
       </div>
       <div className="email-content row">
         <div className="col-6 col-s-12">
@@ -14,7 +16,8 @@ export default function Page() {
         </div>
         <div className="col-6 col-s-12">
           <p>
-            We'll be in touch soon with more information about our campaign.
+            We&apos;ll be in touch soon with more information about our
+            campaign.
           </p>
         </div>
       </div>

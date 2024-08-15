@@ -28,7 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
-  // const img = body.img;
+  const img = body.img;
 
   const textArray = quote;
   const contents = textArray
@@ -56,14 +56,14 @@ export async function POST(req) {
 
     
     <div><pre>${contents}</pre></div> <br/>
-    <div> Por aparte le comento que tengo muchos otros productos disponibles, incluyendo Guías Lineales. <div/>
-    <div> Para más información puede visitar: <a href= "https://www.tu.biz/castellano/productos" > www.tu.biz/castellano/productos </a>  </div> <br/>
+    <div> Por aparte le comento que tengo muchos otros productos disponibles, incluyendo Guias Lineales. <div/>
+    <div> Para mas informacion puede visitar: <a href= "https://www.tu.biz/castellano/productos" > www.tu.biz/castellano/productos </a>  </div> <br/>
     <div> Saludos, </div> <br/>
     <div> Edgar Lindo </div> <br/>
       
-    
+    <div> <a href= "https://email.tu.biz/my/un/${email} "> unsubscribe here </a> </div>
    
-   
+    <div><img src="${img}" alt="quote" style="width: 100%; height: auto;"/></div>
     </div>
     `,
     dsn: {

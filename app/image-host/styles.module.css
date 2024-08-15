@@ -1,0 +1,15 @@
+#facebook {
+  position: absolute;
+  object-fit: contain;
+  object-position: center;
+}
+
+.wrap-about {
+  height: 16px;
+  position: relative;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  display: flex;
+}

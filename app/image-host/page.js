@@ -11,7 +11,7 @@ export default function Page() {
           fill={true}
           src="/images/social-icons/facebook.png"
           alt="facebook icon"
-          title="facebook icon"
+          title="facebook link"
           id="facebook"
           // width={16}
           // height={16}
@@ -22,8 +22,8 @@ export default function Page() {
         <Image
           fill={true}
           src="/images/social-icons/instagram.png"
-          alt="facebook icon"
-          title="facebook icon"
+          alt="instagram icon"
+          title="instagram link"
           id="facebook"
           // width={16}
           // height={16}
@@ -34,8 +34,8 @@ export default function Page() {
         <Image
           fill={true}
           src="/images/social-icons/linkedin.png"
-          alt="facebook icon"
-          title="facebook icon"
+          alt="linkedin icon"
+          title="linkedin link"
           id="facebook"
           // width={16}
           // height={16}
@@ -46,8 +46,8 @@ export default function Page() {
         <Image
           fill={true}
           src="/images/social-icons/snapchat.png"
-          alt="facebook icon"
-          title="facebook icon"
+          alt="snapchat icon"
+          title="snapchat link"
           id="facebook"
           // width={16}
           // height={16}
@@ -58,8 +58,8 @@ export default function Page() {
         <Image
           fill={true}
           src="/images/social-icons/tiktok.png"
-          alt="facebook icon"
-          title="facebook icon"
+          alt="tiktok icon"
+          title="tiktok link"
           id="facebook"
           // width={16}
           // height={16}
@@ -69,9 +69,9 @@ export default function Page() {
       <div className={styles.wrap}>
         <Image
           fill={true}
-          src="/images/social-icons/youtube.png"
-          alt="facebook icon"
-          title="facebook icon"
+          src="/images/social-icons/youtube16.png"
+          alt="youtube icon"
+          title="youtube link"
           id="facebook"
           // width={16}
           // height={16}

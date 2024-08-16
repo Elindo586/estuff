@@ -59,6 +59,7 @@ export async function POST(req) {
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Email</title>
     <style>
+      /* General Styles */
       @media only screen and (max-width: 1000px) {
         .container {
           width: 100% !important;
@@ -67,6 +68,28 @@ export async function POST(req) {
         .social-icons img {
           width: 24px !important;
           height: 24px !important;
+        }
+      }
+
+      /* Make images responsive */
+      img {
+        max-width: 100%;
+        height: auto;
+        border: 0;
+        display: block;
+      }
+
+      /* Responsive Layout for Two Column */
+      @media only screen and (max-width: 600px) {
+        .two-column td {
+          display: block;
+          width: 100% !important;
+          text-align: center;
+          padding: 0;
+        }
+        .two-column td img {
+          margin: 0 auto;
+          display: block;
         }
       }
     </style>
@@ -91,7 +114,7 @@ export async function POST(req) {
           <!-- Main Container -->
           <table
             width="1000"
-            border=""
+            border="0"
             cellspacing="0"
             cellpadding="0"
             class="container"
@@ -120,7 +143,7 @@ export async function POST(req) {
             border="0"
             cellspacing="0"
             cellpadding="0"
-            class="container"
+            class="container two-column"
             style="
               background-color: lightblue;
               margin-bottom: 0.3em;
@@ -129,22 +152,22 @@ export async function POST(req) {
             "
           >
             <tr>
-              <td width="50%" style="text-align: center; padding: 2%">
-                <a href="https://www.facebook.com/theedgarlindo">
+              <td width="50%" style="text-align: right; padding: 2%">
+                <a href="https://www.tu.biz/castellano/productos">
                   <img
-                    src="https://www.tu.biz/_next/image?url=%2Fimages%2Frexrothpump-1.png&w=1920&q=75"
-                    alt="Facebook"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Frexrothpump-5.png&w=1920&q=75"
+                    alt="Rexroth pump replacement"
                     style="
-                      border: 0;
-                      display: block;
-                      width: 395px;
-                      height: 287px;
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
                     "
                   />
                 </a>
               </td>
-              <td width="50%" style="vertical-align: top">
-                <p style="padding: 2%">
+              <td width="50%" style="vertical-align: top; padding-left: 2%">
+                <p>
                   We'll be in touch soon with more information about our
                   campaign.
                 </p>
@@ -180,7 +203,12 @@ export async function POST(req) {
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
                     alt="LinkedIn"
-                    style="border: 0; display: block; width: 24px; height: 24px"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
                   />
                 </a>
               </td>
@@ -189,7 +217,12 @@ export async function POST(req) {
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
                     alt="YouTube"
-                    style="border: 0; display: block; width: 24px; height: 24px"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
                   />
                 </a>
               </td>
@@ -198,7 +231,12 @@ export async function POST(req) {
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
                     alt="Snapchat"
-                    style="border: 0; display: block; width: 24px; height: 24px"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
                   />
                 </a>
               </td>
@@ -207,7 +245,12 @@ export async function POST(req) {
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
                     alt="Instagram"
-                    style="border: 0; display: block; width: 24px; height: 24px"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
                   />
                 </a>
               </td>
@@ -216,7 +259,12 @@ export async function POST(req) {
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
                     alt="TikTok"
-                    style="border: 0; display: block; width: 24px; height: 24px"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
                   />
                 </a>
               </td>
@@ -225,7 +273,12 @@ export async function POST(req) {
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
                     alt="Facebook"
-                    style="border: 0; display: block; width: 24px; height: 24px"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
                   />
                 </a>
               </td>
@@ -275,7 +328,6 @@ export async function POST(req) {
     </table>
   </body>
 </html>
-
 
     `,
     dsn: {

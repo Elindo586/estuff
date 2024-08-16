@@ -90,6 +90,18 @@ export default function Page() {
           sizes="100vw"
         />
       </div>
+      <div className={styles.wraplinearguides}>
+        <Image
+          fill={true}
+          src="/images/products/linear-guides2.png"
+          alt="Linear Guide"
+          title="Linear Guide"
+          id="imageId"
+          // width={551}
+          // height={346}
+          sizes="100vw"
+        />
+      </div>
     </div>
   );
 }

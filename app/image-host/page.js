@@ -81,7 +81,7 @@ export default function Page() {
       <div className={styles.wrapA10v}>
         <Image
           fill={true}
-          src="/images/products/rexrothpump-4.png"
+          src="/images/products/rexrothpump-5.png"
           alt="Rexroth"
           title="Rexroth Pump Replacement"
           id="imageId"

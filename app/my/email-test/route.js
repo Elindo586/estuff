@@ -52,7 +52,7 @@ export async function POST(req) {
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
     html: `
-   <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -64,6 +64,9 @@ export async function POST(req) {
         .container {
           width: 100% !important;
           padding: 0 !important;
+        }
+        .container2 {
+          width: 100% !important;
         }
         .social-icons img {
           width: 24px !important;
@@ -103,11 +106,16 @@ export async function POST(req) {
     "
   >
     <table
-      width="100%"
-      border="0"
+      width="99%"
       cellspacing="0"
       cellpadding="0"
-      style="background-color: whitesmoke; padding: 20px"
+      style="
+        background-color: whitesmoke;
+        padding: 20px;
+        margin-top: 2px;
+        margin-right: auto;
+        margin-left: auto;
+      "
     >
       <tr>
         <td align="center">
@@ -119,7 +127,7 @@ export async function POST(req) {
             cellpadding="0"
             class="container"
             style="
-              background-color: rgb(48, 38, 110);
+              background-color: #016698;
               margin-bottom: 0.3em;
               border-radius: 10px;
               padding: 1em;
@@ -127,16 +135,31 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center">
-                <h1 style="margin: 0; color: white">Todo lo Industrial.</h1>
+                <h1 style="margin: 0; color: white">Technical Union.</h1>
                 <p style="margin: 0.1em; color: white">
                   Automatizción de maquinaria.
                 </p>
                 <p style="color: white">
-                  Hidráulica | Neumática |Eléctrica | Mecánica
+                  Hidráulica | Neumática | Eléctrica | Mecánica
                 </p>
               </td>
             </tr>
           </table>
+          <!-- Middle line  -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container2"
+            style="
+              background-color: #016698;
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 0.1em;
+            "
+          ></table>
+
           <!-- Two Column Layout -->
           <table
             width="1000"
@@ -145,7 +168,7 @@ export async function POST(req) {
             cellpadding="0"
             class="container two-column"
             style="
-              background-color: lightblue;
+              background-color: white;
               margin-bottom: 0.3em;
               border-radius: 10px;
               padding: 1em;
@@ -167,9 +190,82 @@ export async function POST(req) {
                 </a>
               </td>
               <td width="50%" style="vertical-align: top; padding-left: 2%">
-                <p>
-                  We'll be in touch soon with more information about our
-                  campaign.
+                <br />
+                <p style="color: #3a6b83">
+                  Tenemos bombas de reemplazo para Rexroth serie A10V.
+                </p>
+                <p style="color: #3a6b83">
+                  <b>Repuestos</b>: grupos rotatorios, kit de sellos, kit de
+                  rodamientos.
+                </p>
+                <p style="color: #3a6b83">
+                  Bombas completas desde 18cc hasta 140cc.
+                </p>
+                <br />
+                <p style="color: #3a6b83">
+                  Intercambios directos todo en <b>STOCK</b>
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- Middle line  -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container2"
+            style="
+              background-color: #016698;
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 0.1em;
+            "
+          ></table>
+          <!-- Two Column Layout -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container two-column"
+            style="
+              background-color: white;
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 1em;
+            "
+          >
+            <tr>
+              <td width="50%" style="text-align: right; padding: 2%">
+                <a href="https://www.tu.biz/castellano/productos">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides2.png&w=1920&q=75"
+                    alt="Rexroth pump replacement"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                </a>
+              </td>
+              <td width="50%" style="vertical-align: top; padding-left: 2%">
+                <p style="color: #3a6b83">
+                  Manejamos guías lineales de intercambios con todas marcas.
+                </p>
+                <p style="color: #3a6b83">
+                  <b>Repuestos</b>: rieles, bloques, ensambles completos.
+                </p>
+                <p style="color: #3a6b83">
+                  Material de alta calidad, precios competitivos, entrega
+                  rápida.
+                </p>
+                <br />
+                <p style="color: #3a6b83; margin-top: 5em">
+                  <b> Soporte</b> técnico y comercial para crecimiento de su
+                  empresa.
                 </p>
               </td>
             </tr>
@@ -328,6 +424,7 @@ export async function POST(req) {
     </table>
   </body>
 </html>
+
 
     `,
     dsn: {

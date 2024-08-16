@@ -24,11 +24,20 @@
   aspect-ratio: 1.3769633508;
 }
 .wraplinearguides {
-  height: 346px;
+  height: 200px;
   position: relative;
   margin-top: 1em;
   margin-right: auto;
   margin-left: auto;
   margin-bottom: 0.5em;
   aspect-ratio: 1.5924855491;
+}
+.wrapcharlynn {
+  height: 200px;
+  position: relative;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  aspect-ratio: 1.3979591837;
 }

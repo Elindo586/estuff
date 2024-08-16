@@ -102,6 +102,18 @@ export default function Page() {
           sizes="100vw"
         />
       </div>
+      <div className={styles.wrapcharlynn}>
+        <Image
+          fill={true}
+          src="/images/products/charlynn2.png"
+          alt="Charlynn replacement"
+          title="Charlynn replacement"
+          id="imageId"
+          // width={411}
+          // height={294}
+          sizes="100vw"
+        />
+      </div>
     </div>
   );
 }

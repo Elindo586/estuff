@@ -1,4 +1,4 @@
-#facebook {
+#imageId {
   position: absolute;
   object-fit: contain;
   object-position: center;
@@ -12,4 +12,14 @@
   margin-left: auto;
   margin-bottom: 0.5em;
   aspect-ratio: 1;
+}
+
+.wrapA10v {
+  height: 191px;
+  position: relative;
+  margin-top: 1em;
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 0.5em;
+  aspect-ratio: 1.3769633508;
 }

@@ -54,108 +54,228 @@ export async function POST(req) {
     html: `
    <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Email</title>
-  <style>
-    @media only screen and (max-width: 1000px) {
-      .container {
-        width: 100% !important;
-        padding: 0 !important;
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Email</title>
+    <style>
+      @media only screen and (max-width: 1000px) {
+        .container {
+          width: 100% !important;
+          padding: 0 !important;
+        }
+        .social-icons img {
+          width: 24px !important;
+          height: 24px !important;
+        }
       }
-      .social-icons img {
-        width: 24px !important;
-        height: 24px !important;
-      }
-    }
+    </style>
+  </head>
+  <body
+    style="
+      font-family: Arial, sans-serif;
+      background-color: whitesmoke;
+      margin: 0;
+      padding: 0;
+    "
+  >
+    <table
+      width="100%"
+      border="0"
+      cellspacing="0"
+      cellpadding="0"
+      style="background-color: whitesmoke; padding: 20px"
+    >
+      <tr>
+        <td align="center">
+          <!-- Main Container -->
+          <table
+            width="1000"
+            border=""
+            cellspacing="0"
+            cellpadding="0"
+            class="container"
+            style="
+              background-color: rgb(48, 38, 110);
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 1em;
+            "
+          >
+            <tr>
+              <td style="text-align: center">
+                <h1 style="margin: 0; color: white">Todo lo Industrial.</h1>
+                <p style="margin: 0.1em; color: white">
+                  Automatizción de maquinaria.
+                </p>
+                <p style="color: white">
+                  Hidráulica | Neumática |Eléctrica | Mecánica
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- Two Column Layout -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container"
+            style="
+              background-color: lightblue;
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 1em;
+            "
+          >
+            <tr>
+              <td width="50%" style="text-align: center; padding: 2%">
+                <a href="https://www.facebook.com/theedgarlindo">
+                  <img
+                    src="https://www.tu.biz/_next/image?url=%2Fimages%2Frexrothpump-1.png&w=1920&q=75"
+                    alt="Facebook"
+                    style="
+                      border: 0;
+                      display: block;
+                      width: 395px;
+                      height: 287px;
+                    "
+                  />
+                </a>
+              </td>
+              <td width="50%" style="vertical-align: top">
+                <p style="padding: 2%">
+                  We'll be in touch soon with more information about our
+                  campaign.
+                </p>
+              </td>
+            </tr>
+          </table>
+          <!-- Social Media -->
+          <table
+            width="400"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container"
+            style="
+              background-color: whitesmoke;
+              margin-bottom: 1em;
+              margin-left: auto;
+              margin-right: auto;
+              padding-top: 0.5em;
+              text-align: center;
+            "
+          >
+            <tr>
+              <td colspan="6">
+                <p style="color: grey; margin-bottom: 0.5em">
+                  Social Media Follow
+                </p>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: center">
+                <a href="https://www.linkedin.com/in/edgarlindo/">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
+                    alt="LinkedIn"
+                    style="border: 0; display: block; width: 24px; height: 24px"
+                  />
+                </a>
+              </td>
+              <td style="text-align: center">
+                <a href="https://www.youtube.com/@EdgarLindo">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
+                    alt="YouTube"
+                    style="border: 0; display: block; width: 24px; height: 24px"
+                  />
+                </a>
+              </td>
+              <td style="text-align: center">
+                <a href="https://www.snapchat.com/add/elindo586">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
+                    alt="Snapchat"
+                    style="border: 0; display: block; width: 24px; height: 24px"
+                  />
+                </a>
+              </td>
+              <td style="text-align: center">
+                <a href="https://www.instagram.com/mredgarlindo">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
+                    alt="Instagram"
+                    style="border: 0; display: block; width: 24px; height: 24px"
+                  />
+                </a>
+              </td>
+              <td style="text-align: center">
+                <a href="https://www.tiktok.com/@theedgarlindo">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
+                    alt="TikTok"
+                    style="border: 0; display: block; width: 24px; height: 24px"
+                  />
+                </a>
+              </td>
+              <td style="text-align: center">
+                <a href="https://www.facebook.com/theedgarlindo">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
+                    alt="Facebook"
+                    style="border: 0; display: block; width: 24px; height: 24px"
+                  />
+                </a>
+              </td>
+            </tr>
+          </table>
 
-    
-  </style>
-</head>
-<body style="font-family: Arial, sans-serif; background-color: whitesmoke; margin: 0; padding: 0;">
-  <table width="100%" border="0" cellspacing="0" cellpadding="0" style="background-color: whitesmoke; padding: 20px;">
-    <tr>
-      <td align="center">
-        <!-- Main Container -->
-        <table width="1000" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: lightblue; margin-bottom: .3em; border-radius: 10px; padding: 1em;">
-          <tr>
-            <td>
-              <h1 style="margin: 0;">Thanks for signing up!</h1>
-              <p style="margin: 0;">We'll be in touch soon with more information about our campaign.</p>
-            </td>
-          </tr>
-        </table>
-        <!-- Two Column Layout -->
-        <table width="1000" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: lightblue; margin-bottom: .3em; border-radius: 10px; padding: 1em;">
-          <tr>
-            <td width="50%" style="vertical-align: top;">
-              <h1 style="margin: 0;">Thanks for signing up!</h1>
-            </td>
-            <td width="50%" style="vertical-align: top;">
-              <p style="margin: 0;">We'll be in touch soon with more information about our campaign.</p>
-            </td>
-          </tr>
-        </table>
-        <!-- Social Media -->
-       <table width="400" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: whitesmoke; margin: auto; padding-top: 0.5em; text-align: center;">
-  <tr>
-    <td colspan="6">
-      <p style="color: grey; margin-bottom: .5em;">Social Media Follow</p>
-    </td>
-  </tr>
-  <tr>
-    <td style="text-align: center;">
-      <a href="https://www.linkedin.com/in/edgarlindo/">
-        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin.png&w=1920&q=75" alt="LinkedIn" style="border: 0; display: block; width: 24px; height: 24px;" />
-      </a>
-    </td>
-    <td style="text-align: center;">
-      <a href="https://www.youtube.com/@EdgarLindo">
-        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube16.png&w=1920&q=75" alt="YouTube" style="border: 0; display: block; width: 24px; height: 24px;" />
-      </a>
-    </td>
-    <td style="text-align: center;">
-      <a href="https://www.snapchat.com/add/elindo586">
-        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat.png&w=1920&q=75" alt="Snapchat" style="border: 0; display: block; width: 24px; height: 24px;" />
-      </a>
-    </td>
-    <td style="text-align: center;">
-      <a href="https://www.instagram.com/mredgarlindo">
-        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram.png&w=1920&q=75" alt="Instagram" style="border: 0; display: block; width: 24px; height: 24px;" />
-      </a>
-    </td>
-    <td style="text-align: center;">
-      <a href="https://www.tiktok.com/@theedgarlindo">
-        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok.png&w=1920&q=75" alt="TikTok" style="border: 0; display: block; width: 24px; height: 24px;" />
-      </a>
-    </td>
-    <td style="text-align: center;">
-      <a href="https://www.facebook.com/theedgarlindo">
-        <img src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook.png&w=1920&q=75" alt="Facebook" style="border: 0; display: block; width: 24px; height: 24px;" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-        <!-- Footer -->
-        <table width="1000" border="0" cellspacing="0" cellpadding="0" class="container" style="background-color: whitesmoke; margin: auto; padding: 0.5em; text-align: center; font-size: 10px;">
-          <tr>
-            <td>
-              <p style="color: grey; margin: 0 0 0.5em;">${year} Edgar Lindo, all rights reserved.</p>
-              <p style="color: grey; margin: 0 0 0.5em;">This email was sent to: ${email}</p>
-              <p style="color: grey; margin: 0 0 0.5em;">This email was sent by: Edgar Lindo | 4 N Rammer | Arglington Heights IL 60004 | USA</p>
-              <p style="color: grey; margin: 0 0 0.5em;">
-                To unsubscribe <a href="https://email.tu.biz/my/un/${email}" style="color: #007bff;">click here</a>
-              </p>
-            </td>
-          </tr>
-        </table>
-      </td>
-    </tr>
-  </table>
-</body>
+          <!-- Footer -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container"
+            style="
+              background-color: whitesmoke;
+              margin: auto;
+              padding: 0.5em;
+              text-align: center;
+              font-size: 10px;
+            "
+          >
+            <tr>
+              <td>
+                <p style="color: grey; margin: 0 0 0.5em">
+                  ${year} Edgar Lindo, all rights reserved.
+                </p>
+                <p style="color: grey; margin: 0 0 0.5em">
+                  This email was sent to: ${email}
+                </p>
+                <p style="color: grey; margin: 0 0 0.5em">
+                  This email was sent by: Edgar Lindo | 4 N Rammer | Arglington
+                  Heights IL 60004 | USA
+                </p>
+                <p style="color: grey; margin: 0 0 0.5em">
+                  To unsubscribe
+                  <a
+                    href="https://email.tu.biz/my/un/${email}"
+                    style="color: grey"
+                    >click here</a
+                  >
+                </p>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
+
 
     `,
     dsn: {

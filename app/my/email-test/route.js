@@ -270,6 +270,69 @@ export async function POST(req) {
               </td>
             </tr>
           </table>
+          <!-- Middle line  -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container2"
+            style="
+              background-color: #016698;
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 0.1em;
+            "
+          ></table>
+          <!-- Two Column Layout -->
+          <table
+            width="1000"
+            border="0"
+            cellspacing="0"
+            cellpadding="0"
+            class="container two-column"
+            style="
+              background-color: white;
+              margin-bottom: 0.3em;
+              border-radius: 10px;
+              padding: 1em;
+            "
+          >
+            <tr>
+              <td width="50%" style="text-align: right; padding: 2%">
+                <a href="https://www.tu.biz/castellano/productos">
+                  <img
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn2.png&w=1920&q=75"
+                    alt="Rexroth pump replacement"
+                    style="
+                      max-width: 100%;
+                      height: auto;
+                      margin-left: auto;
+                      margin-right: auto;
+                    "
+                  />
+                </a>
+              </td>
+              <td width="50%" style="vertical-align: top; padding-left: 2%">
+                <br />
+                <p style="color: #3a6b83">
+                  Tenemos bombas de reemplazo para Rexroth serie A10V.
+                </p>
+                <p style="color: #3a6b83">
+                  <b>Repuestos</b>: grupos rotatorios, kit de sellos, kit de
+                  rodamientos.
+                </p>
+                <p style="color: #3a6b83">
+                  Bombas completas desde 18cc hasta 140cc.
+                </p>
+                <br />
+                <p style="color: #3a6b83">
+                  Intercambios directos todo en <b>STOCK NOW</b>
+                </p>
+              </td>
+            </tr>
+          </table>
+
           <!-- Social Media -->
           <table
             width="400"
@@ -365,7 +428,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.facebook.com/theedgarlindo">
+                <a href="https://www.tu.biz/my/social/facebook/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
                     alt="Facebook"

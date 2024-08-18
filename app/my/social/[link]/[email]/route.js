@@ -20,7 +20,7 @@ export async function GET(_, { params }) {
     text: ``,
     html: `<div>
             <di> Hello There,</div>
-            <div> This guy wants to be unsubscribe ${userEmail} </div>
+            <div> This is a click.  ${userEmail} </div>
             <div> he clicked on ${linkClick} </div>
           </div>`,
   };

@@ -428,7 +428,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.tu.biz/my/social/facebook/${email}">
+                <a href="https://www.email.tu.biz/my/social/facebook/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
                     alt="Facebook"

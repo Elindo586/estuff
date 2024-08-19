@@ -52,7 +52,7 @@ export async function POST(req) {
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
     html: `
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -94,12 +94,6 @@ export async function POST(req) {
           margin: 0 auto;
           display: block;
         }
-      }
-      /* Constrain images to 50% of their parent td */
-      .two-column td img {
-        max-width: 100%; /* Ensures image does not exceed the width of the td */
-        height: auto;
-        display: block;
       }
     </style>
   </head>
@@ -181,7 +175,10 @@ export async function POST(req) {
             "
           >
             <tr>
-              <td width="50%" style="text-align: right; padding: 2%">
+              <td
+                width="50%"
+                style="text-align: right; padding: 2%; box-sizing: border-box"
+              >
                 <a href="https://www.tu.biz/castellano/productos">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Frexrothpump-5.png&w=1920&q=75"
@@ -189,13 +186,21 @@ export async function POST(req) {
                     style="
                       max-width: 100%;
                       height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
+                      display: block;
+                      border: 0;
+                      margin: 0 auto;
                     "
                   />
                 </a>
               </td>
-              <td width="50%" style="vertical-align: top; padding-left: 2%">
+              <td
+                width="50%"
+                style="
+                  vertical-align: top;
+                  padding-left: 2%;
+                  box-sizing: border-box;
+                "
+              >
                 <br />
                 <p style="color: #3a6b83">
                   Tenemos bombas de reemplazo para Rexroth serie A10V.
@@ -243,7 +248,10 @@ export async function POST(req) {
             "
           >
             <tr>
-              <td width="50%" style="text-align: right; padding: 2%">
+              <td
+                width="50%"
+                style="text-align: right; padding: 2%; box-sizing: border-box"
+              >
                 <a href="https://www.tu.biz/castellano/productos">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides2.png&w=1920&q=75"
@@ -251,13 +259,21 @@ export async function POST(req) {
                     style="
                       max-width: 100%;
                       height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
+                      display: block;
+                      border: 0;
+                      margin: 0 auto;
                     "
                   />
                 </a>
               </td>
-              <td width="50%" style="vertical-align: top; padding-left: 2%">
+              <td
+                width="50%"
+                style="
+                  vertical-align: top;
+                  padding-left: 2%;
+                  box-sizing: border-box;
+                "
+              >
                 <p style="color: #3a6b83">
                   Manejamos guías lineales de intercambios con todas marcas.
                 </p>
@@ -276,6 +292,7 @@ export async function POST(req) {
               </td>
             </tr>
           </table>
+
           <!-- Middle line  -->
           <table
             width="1000"
@@ -305,7 +322,10 @@ export async function POST(req) {
             "
           >
             <tr>
-              <td width="50%" style="text-align: right; padding: 2%">
+              <td
+                width="50%"
+                style="text-align: right; padding: 2%; box-sizing: border-box"
+              >
                 <a href="https://www.tu.biz/castellano/productos">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn2.png&w=1920&q=75"
@@ -313,8 +333,9 @@ export async function POST(req) {
                     style="
                       max-width: 100%;
                       height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
+                      display: block;
+                      border: 0;
+                      margin: 0 auto;
                     "
                   />
                 </a>

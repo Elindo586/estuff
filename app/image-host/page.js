@@ -93,24 +93,24 @@ export default function Page() {
       <div className={styles.wraplinearguides}>
         <Image
           fill={true}
-          src="/images/products/linear-guides2.png"
+          src="/images/products/linear-guides263.png"
           alt="Linear Guide"
           title="Linear Guide"
           id="imageId"
-          // width={551}
-          // height={346}
+          // width={263}
+          // height={165}
           sizes="100vw"
         />
       </div>
       <div className={styles.wrapcharlynn}>
         <Image
           fill={true}
-          src="/images/products/charlynn2.png"
+          src="/images/products/charlynn263.png"
           alt="Charlynn replacement"
           title="Charlynn replacement"
           id="imageId"
-          // width={411}
-          // height={294}
+          // width={263}
+          // height={166}
           sizes="100vw"
         />
       </div>

@@ -95,6 +95,12 @@ export async function POST(req) {
           display: block;
         }
       }
+      /* Constrain images to 50% of their parent td */
+      .two-column td img {
+        max-width: 100%; /* Ensures image does not exceed the width of the td */
+        height: auto;
+        display: block;
+      }
     </style>
   </head>
   <body
@@ -487,7 +493,6 @@ export async function POST(req) {
     </table>
   </body>
 </html>
-
 
     `,
     dsn: {

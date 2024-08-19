@@ -177,7 +177,7 @@ export async function POST(req) {
             <tr>
               <td
                 width="50%"
-                style="text-align: right; padding: 2%; box-sizing: border-box"
+                style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a href="https://www.tu.biz/castellano/productos">
                   <img
@@ -250,12 +250,12 @@ export async function POST(req) {
             <tr>
               <td
                 width="50%"
-                style="text-align: right; padding: 2%; box-sizing: border-box"
+                style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a href="https://www.tu.biz/castellano/productos">
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides2.png&w=1920&q=75"
-                    alt="Rexroth pump replacement"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
+                    alt="Linear Guides"
                     style="
                       max-width: 100%;
                       height: auto;
@@ -324,19 +324,13 @@ export async function POST(req) {
             <tr>
               <td
                 width="50%"
-                style="text-align: right; padding: 2%; box-sizing: border-box"
+                style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a href="https://www.tu.biz/castellano/productos">
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn2.png&w=1920&q=75"
-                    alt="Rexroth pump replacement"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      display: block;
-                      border: 0;
-                      margin: 0 auto;
-                    "
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
+                    alt="Motores Orbitales"
+                    style="max-width: 100%; height: auto; object-fit: contain"
                   />
                 </a>
               </td>
@@ -455,7 +449,11 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.email.tu.biz/my/social/facebook/${email}">
+                  <a
+                  href="https://www.email.tu.biz/my/social/facebook/${encodeURIComponent(
+                    email
+                  )}"
+                >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
                     alt="Facebook"

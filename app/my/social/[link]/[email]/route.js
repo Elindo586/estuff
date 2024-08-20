@@ -57,6 +57,4 @@ export async function GET(request, { params }) {
   }
 
   redirect(redirectUrl);
-
-  return Response.json({ message: "Email sent!" });
 }

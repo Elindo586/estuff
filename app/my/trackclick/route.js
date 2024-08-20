@@ -1,8 +1,7 @@
-/import nodemailer from "nodemailer";
+import nodemailer from "nodemailer";
 
 export async function POST(req) {
-
-    const { social, email } = req.body;
+  const { social, email } = req.body;
 
   const transporter = nodemailer.createTransport({
     service: "Outlook365",
@@ -25,11 +24,6 @@ export async function POST(req) {
     });
   });
 
- 
- 
-
- 
-
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
@@ -38,7 +32,6 @@ export async function POST(req) {
     html: `
    
     `,
-    
   };
 
   await new Promise((resolve, reject) => {

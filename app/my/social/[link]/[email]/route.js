@@ -56,5 +56,5 @@ export async function GET(request, { params }) {
       break;
   }
 
-  return NextResponse.redirectUrl(redirectUrl);
+  return NextResponse.redirect(new URL("https://www.youtube.com", request.url));
 }

@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import { NextResponse } from "next/server";
+import { redirect } from "next/navigation";
 
 export async function GET(request, { params }) {
   // Assuming `params` is used to extract `linkClick`
@@ -36,25 +36,27 @@ export async function GET(request, { params }) {
   }
 
   // Ensure you use `request.url` if `request` is used
-  const redirectUrl = new URL("https://www.youtube.com", request.url);
+  const redirectUrl = "https://www.youtube.com";
 
   switch (linkClick) {
     case "facebook":
-      redirectUrl.href = "https://www.facebook.com";
+      redirectUrl = "https://www.facebook.com";
       break;
     case "instagram":
-      redirectUrl.href = "https://www.instagram.com";
+      redirectUrl = "https://www.instagram.com";
       break;
     case "linkedin":
-      redirectUrl.href = "https://www.linkedin.com";
+      redirectUrl = "https://www.linkedin.com";
       break;
     case "snapchat":
-      redirectUrl.href = "https://www.snapchat.com";
+      redirectUrl = "https://www.snapchat.com";
       break;
     case "tiktok":
-      redirectUrl.href = "https://www.tiktok.com";
+      redirectUrl = "https://www.tiktok.com";
       break;
   }
 
-  return NextResponse.redirect(new URL("https://www.youtube.com", request.url));
+  redirect(redirectUrl);
+
+  return Response.json({ message: "Email sent!" });
 }

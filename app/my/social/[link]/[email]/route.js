@@ -36,7 +36,7 @@ export async function GET(request, { params }) {
   }
 
   // Ensure you use `request.url` if `request` is used
-  const redirectUrl = "https://www.youtube.com";
+  let redirectUrl = "https://www.youtube.com";
 
   switch (linkClick) {
     case "facebook":

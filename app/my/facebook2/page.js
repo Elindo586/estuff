@@ -6,12 +6,10 @@ import { useEffect } from "react";
 export default function SocialPage() {
   useEffect(() => {
     const redirectToSocial = async () => {
-      const data = {
-        link: facebook,
-      };
+      const data = "facebook";
 
       // Send the email notification
-      await fetch("/trackclick", {
+      await fetch("/facebooktrack", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -20,17 +18,12 @@ export default function SocialPage() {
       });
 
       // Redirect to the appropriate social media site
-      if (link === "facebook") {
-        window.location.href = "https://www.facebook.com";
-      } else if (link === "youtube") {
-        window.location.href = "https://www.youtube.com";
-      } else {
-        window.location.href = "https://www.linkedin.com";
-      }
+
+      window.location.href = "https://www.facebook.com";
     };
 
     redirectToSocial();
-  }, [link, email]);
+  }, []);
 
   return <div>Redirecting...</div>;
 }

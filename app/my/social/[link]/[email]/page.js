@@ -18,13 +18,15 @@ export default function SocialPage({ params }) {
       });
 
       // Redirect to the appropriate social media site
-      if (link === "facebook") {
-        window.location.href = "https://www.facebook.com";
-      } else if (link === "youtube") {
-        window.location.href = "https://www.youtube.com";
-      } else {
-        window.location.href = "https://www.linkedin.com";
-      }
+      setTimeout(function () {
+        if (link === "facebook") {
+          window.location.href = "https://www.facebook.com";
+        } else if (link === "youtube") {
+          window.location.href = "https://www.youtube.com";
+        } else {
+          window.location.href = "https://www.linkedin.com";
+        }
+      }, 5000); // 5000 milliseconds = 5 seconds
     };
 
     redirectToSocial();

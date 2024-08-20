@@ -1,0 +1,36 @@
+"use client";
+
+// app/social/[link]/[email]/page.js
+import { useEffect } from "react";
+
+export default function SocialPage() {
+  useEffect(() => {
+    const redirectToSocial = async () => {
+      const data = {
+        link: facebook,
+      };
+
+      // Send the email notification
+      await fetch("/trackclick", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ data }),
+      });
+
+      // Redirect to the appropriate social media site
+      if (link === "facebook") {
+        window.location.href = "https://www.facebook.com";
+      } else if (link === "youtube") {
+        window.location.href = "https://www.youtube.com";
+      } else {
+        window.location.href = "https://www.linkedin.com";
+      }
+    };
+
+    redirectToSocial();
+  }, [link, email]);
+
+  return <div>Redirecting...</div>;
+}

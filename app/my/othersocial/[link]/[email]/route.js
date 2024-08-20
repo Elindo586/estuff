@@ -1,6 +1,9 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
+export const maxDuration = 5; // This function can run for a maximum of 5 seconds
+export const dynamic = "force-dynamic";
+
 export async function GET(request, { params }) {
   // Assuming `params` is used to extract `linkClick`
   const linkClick = params.link;

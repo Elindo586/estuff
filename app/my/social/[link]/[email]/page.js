@@ -23,7 +23,7 @@ export default function SocialPage({ params }) {
       } else if (link === "youtube") {
         window.location.href = "https://www.youtube.com";
       } else {
-        console.error("Unknown social media link");
+        window.location.href = "https://www.linkedin.com";
       }
     };
 

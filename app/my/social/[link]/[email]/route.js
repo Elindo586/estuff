@@ -56,5 +56,5 @@ export async function GET(request, { params }) {
       break;
   }
 
-  return NextResponse.redirect(redirectUrl);
+  return NextResponse.redirectUrl(redirectUrl);
 }

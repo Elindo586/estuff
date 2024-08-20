@@ -1,3 +1,5 @@
+"use client";
+
 // app/social/[link]/[email]/page.js
 import { useEffect } from "react";
 

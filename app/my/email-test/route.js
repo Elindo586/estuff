@@ -179,7 +179,7 @@ export async function POST(req) {
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
-                <a href="https://www.tu.biz/castellano/productos">
+                <a href="https://email.tu.biz/my/otherimage/rexrothpump/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Frexrothpump-5.png&w=1920&q=75"
                     alt="Rexroth pump replacement"
@@ -252,7 +252,7 @@ export async function POST(req) {
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
-                <a href="https://www.tu.biz/castellano/productos">
+                <a href="https://email.tu.biz/my/otherimage/linearguides/${email}"">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
                     alt="Linear Guides"
@@ -326,7 +326,7 @@ export async function POST(req) {
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
-                <a href="https://www.tu.biz/castellano/productos">
+                <a href="https://email.tu.biz/my/otherimage/charlynn/${email}"">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
                     alt="Motores Orbitales"

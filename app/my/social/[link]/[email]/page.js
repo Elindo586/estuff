@@ -3,6 +3,9 @@
 // app/social/[link]/[email]/page.js
 import { useEffect } from "react";
 
+export const maxDuration = 10; // This function can run for a maximum of 5 seconds
+export const dynamic = "force-dynamic";
+
 export default function SocialPage({ params }) {
   const { link, email } = params;
 
@@ -18,15 +21,14 @@ export default function SocialPage({ params }) {
       });
 
       // Redirect to the appropriate social media site
-      setTimeout(function () {
-        if (link === "facebook") {
-          window.location.href = "https://www.facebook.com";
-        } else if (link === "youtube") {
-          window.location.href = "https://www.youtube.com";
-        } else {
-          window.location.href = "https://www.linkedin.com";
-        }
-      }, 5000); // 5000 milliseconds = 5 seconds
+
+      if (link === "facebook") {
+        window.location.href = "https://www.facebook.com";
+      } else if (link === "youtube") {
+        window.location.href = "https://www.youtube.com";
+      } else {
+        window.location.href = "https://www.linkedin.com";
+      }
     };
 
     redirectToSocial();

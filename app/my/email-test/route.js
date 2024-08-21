@@ -252,7 +252,7 @@ export async function POST(req) {
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
-                <a href="https://email.tu.biz/my/otherimage/linearguides/${email}"">
+                <a href="https://email.tu.biz/my/otherimage/linearguides/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
                     alt="Linear Guides"
@@ -326,7 +326,7 @@ export async function POST(req) {
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
-                <a href="https://email.tu.biz/my/otherimage/charlynn/${email}"">
+                <a href="https://email.tu.biz/my/otherimage/charlynn/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
                     alt="Motores Orbitales"
@@ -379,7 +379,7 @@ export async function POST(req) {
             </tr>
             <tr>
               <td style="text-align: center">
-                href="https://email.tu.biz/my/othersocial/linkedin/${email}"
+                <a href="https://email.tu.biz/my/othersocial/linkedin/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
                     alt="LinkedIn"
@@ -393,7 +393,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                href="https://email.tu.biz/my/othersocial/youtube/${email}"
+                <a href="https://email.tu.biz/my/othersocial/youtube/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
                     alt="YouTube"
@@ -407,7 +407,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                href="https://email.tu.biz/my/othersocial/snapchat/${email}"
+                <a href="https://email.tu.biz/my/othersocial/snapchat/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
                     alt="Snapchat"
@@ -421,7 +421,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                href="https://email.tu.biz/my/othersocial/instagram/${email}"
+                <a href="https://email.tu.biz/my/othersocial/instagram/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
                     alt="Instagram"
@@ -435,7 +435,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                href="https://email.tu.biz/my/othersocial/tiktok/${email}"
+                <a href="https://email.tu.biz/my/othersocial/tiktok/${email}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
                     alt="TikTok"

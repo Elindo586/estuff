@@ -379,7 +379,7 @@ export async function POST(req) {
             </tr>
             <tr>
               <td style="text-align: center">
-                <a href="https://www.linkedin.com/in/edgarlindo/">
+                href="https://email.tu.biz/my/othersocial/linkedin/${email}"
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
                     alt="LinkedIn"
@@ -393,7 +393,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.youtube.com/@EdgarLindo">
+                href="https://email.tu.biz/my/othersocial/youtube/${email}"
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
                     alt="YouTube"
@@ -407,7 +407,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.snapchat.com/add/elindo586">
+                href="https://email.tu.biz/my/othersocial/snapchat/${email}"
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
                     alt="Snapchat"
@@ -421,7 +421,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.instagram.com/mredgarlindo">
+                href="https://email.tu.biz/my/othersocial/instagram/${email}"
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
                     alt="Instagram"
@@ -435,7 +435,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://www.tiktok.com/@theedgarlindo">
+                href="https://email.tu.biz/my/othersocial/tiktok/${email}"
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
                     alt="TikTok"

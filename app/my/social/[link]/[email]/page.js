@@ -3,7 +3,6 @@
 // app/social/[link]/[email]/page.js
 import { useEffect } from "react";
 
-export const maxDuration = 10; // This function can run for a maximum of 10 seconds
 export const dynamic = "force-dynamic";
 
 export default function SocialPage({ params }) {

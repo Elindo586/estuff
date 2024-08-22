@@ -39,23 +39,26 @@ export async function GET(request, { params }) {
   }
 
   // Ensure you use `request.url` if `request` is used
-  const redirectUrl = new URL("https://www.youtube.com", request.url);
+  const redirectUrl = new URL(
+    "https://www.youtube.com/@EdgarLindo",
+    request.url
+  );
 
   switch (linkClick) {
     case "facebook":
       redirectUrl.href = "https://www.facebook.com";
       break;
     case "instagram":
-      redirectUrl.href = "https://www.instagram.com";
+      redirectUrl.href = "https://www.instagram.com/mredgarlindo";
       break;
     case "linkedin":
-      redirectUrl.href = "https://www.linkedin.com";
+      redirectUrl.href = "https://www.linkedin.com/in/edgarlindo/";
       break;
     case "snapchat":
-      redirectUrl.href = "https://www.snapchat.com";
+      redirectUrl.href = "https://www.snapchat.com/add/elindo586";
       break;
     case "tiktok":
-      redirectUrl.href = "https://www.tiktok.com";
+      redirectUrl.href = "https://www.tiktok.com/@theedgarlindo";
       break;
   }
 

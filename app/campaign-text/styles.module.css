@@ -1,0 +1,54 @@
+/* General Styles */
+@media only screen and (max-width: 1000px) {
+  .container {
+    width: 100% !important;
+    padding: 0 !important;
+  }
+  .container2 {
+    width: 100% !important;
+  }
+  .social-icons img {
+    width: 24px !important;
+    height: 24px !important;
+  }
+}
+
+.body {
+  font-family: Arial, sans-serif;
+  background-color: whitesmoke;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0;
+}
+.tablemain {
+  background-color: whitesmoke;
+  padding: 20px;
+  margin-top: 2px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.containerstyle {
+  background-color: #016698;
+  margin-bottom: 0.3em;
+  border-radius: 10px;
+  padding: 1em;
+}
+.techunion {
+  margin: 0;
+  color: white;
+}
+.byEdgar {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+}
+.automatizacion {
+  margin-top: 1em;
+  margin-bottom: 0.3em;
+  color: white;
+}
+.hidneuma {
+  color: white;
+  margin: 0;
+}

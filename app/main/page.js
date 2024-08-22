@@ -76,7 +76,7 @@ export default function Page() {
         clearInterval(myIntervals);
         arrayIndex = 0;
       }
-    }, 1 * 1000);
+    }, 3 * 1000);
   };
 
   return (

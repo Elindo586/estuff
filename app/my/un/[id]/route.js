@@ -38,7 +38,7 @@ export async function GET(_, { params }) {
         <body style = "color: blue">
           <div>
             <div> <h1> Hello There, </h1> </div>
-            <div> Your email: ${userEmail} is good. </div>
+            <div> Your email: ${userEmail} has been unsubcribed. </div>
           </div>
         </body>
       </html>

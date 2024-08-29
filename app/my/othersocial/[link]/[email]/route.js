@@ -25,7 +25,7 @@ export async function GET(request, { params }) {
     html: `<div>
             <div>Hello There,</div>
             <div>This is a click. ${linkClick}</div>
-            <div>He clicked on ${userEmail}</div>
+            <div> ${userEmail}</div>
           </div>`,
   };
 

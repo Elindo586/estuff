@@ -17,8 +17,7 @@ export async function GET(_, { params }) {
     subject: `We got feedback from ${userEmail}`,
     text: ``,
     html: `<div>
-            <di> Hello There,</div>
-            <div> This guy wants to be unsubscribe ${userEmail} </div>
+             ${userEmail} 
           </div>`,
   };
   await new Promise((resolve, reject) => {
@@ -38,7 +37,7 @@ export async function GET(_, { params }) {
         <body style = "color: blue">
           <div>
             <div> <h1> Hello There, </h1> </div>
-            <div> Your email: ${userEmail} has been unsubcribed. </div>
+            <div> Your email: ${userEmail} has been unsubscribed. </div>
           </div>
         </body>
       </html>

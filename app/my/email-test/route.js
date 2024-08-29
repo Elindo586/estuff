@@ -23,33 +23,17 @@ export async function POST(req) {
   });
 
   const body = await req.json();
-  const nameFull = body.contact;
-  const nameFirst = body.upper;
+
   const email = body.email;
   const title = body.id;
-  const quote = body.quote;
 
   const d = new Date();
   const year = d.getFullYear();
-  // const img = body.img;
-
-  const textArray = quote;
-  const contents = textArray
-    .map(
-      ({ QuoteN, ItemCode, ItemName, Qty, Price, ExtPrice, LeadTime }) =>
-        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Description: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}
-    `
-    )
-    .join("\n");
-
-  // const text = `Hola ${nameFirst},\n\nTodo bien con su cotizacion? Necesita algo mas? \n \n${contents} \n \nSaludos, \n \nEdgar \n`;
-
-  // console.log(text);
 
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
-    subject: `cotizaciones para ${nameFull} | ${title}`,
+    subject: `Bombas de Reemplazo con Rexroth | Guías Lineales | Motores Orbitales | ${title}`,
     text: ``,
     html: `
 <!DOCTYPE html>
@@ -119,11 +103,12 @@ export async function POST(req) {
     >
       <tr>
         <td style="text-align: center">
-          <p style="margin: 0.5em">
+          <p style="margin-bottom: 0.1em; margin-top: 0.1em">
             Si no puede ver imágenes, haga
             <a href="https://email.tu.biz/my/ehost1/${email}">clic aquí</a>
             para ver el email en página web.
           </p>
+          <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p>
         </td>
       </tr>
       <tr>
@@ -138,6 +123,7 @@ export async function POST(req) {
             style="
               background-color: #016698;
               margin-bottom: 0.3em;
+              margin-top: 0;
               border-radius: 10px;
               padding: 1em;
             "
@@ -185,6 +171,11 @@ export async function POST(req) {
             "
           >
             <tr>
+              <td style="text-align: center" colspan="2">
+                <p style="color: #3a6b83"><b> Bombas de pistones</b></p>
+              </td>
+            </tr>
+            <tr>
               <td
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
@@ -213,7 +204,6 @@ export async function POST(req) {
                   box-sizing: border-box;
                 "
               >
-                <br />
                 <p style="color: #3a6b83">
                   Tenemos bombas de reemplazo para <b>Rexroth</b> serie A10V.
                 </p>
@@ -228,6 +218,43 @@ export async function POST(req) {
                 <p style="color: #3a6b83">
                   Intercambios directos todo en <b>STOCK</b>
                 </p>
+                <button
+                  type="button"
+                  style="
+                    margin-top: 1em;
+                    background-color: #016698;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    border-color: #016698;
+                  "
+                >
+                  <a
+                    href="https://email.tu.biz/my/otherimage/rexrothpump/${email} "
+                    style="color: white; text-decoration: none"
+                  >
+                    <b>Ver más</b>
+                  </a>
+                </button>
+                &nbsp;
+                <button
+                  type="button"
+                  style="
+                    margin-top: 1em;
+                    background-color: #51ce70;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    border-color: #51ce70;
+                  "
+                >
+                  <a
+                    href="https://wa.me/15866125270"
+                    style="color: white; text-decoration: none"
+                  >
+                    <b>WhatsApp</b>
+                  </a>
+                </button>
               </td>
             </tr>
           </table>
@@ -259,6 +286,11 @@ export async function POST(req) {
               padding: 1em;
             "
           >
+            <tr>
+              <td style="text-align: center" colspan="2">
+                <p style="color: #3a6b83"><b> Guías Lineales</b></p>
+              </td>
+            </tr>
             <tr>
               <td
                 width="50%"
@@ -303,6 +335,43 @@ export async function POST(req) {
                   <b> Soporte</b> técnico y comercial para crecimiento de su
                   empresa.
                 </p>
+                <button
+                  type="button"
+                  style="
+                    margin-top: 1em;
+                    background-color: #016698;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    border-color: #016698;
+                  "
+                >
+                  <a
+                    href="https://email.tu.biz/my/otherimage/linearguides/${email} "
+                    style="color: white; text-decoration: none"
+                  >
+                    <b>Ver más</b>
+                  </a>
+                </button>
+                &nbsp;
+                <button
+                  type="button"
+                  style="
+                    margin-top: 1em;
+                    background-color: #51ce70;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    border-color: #51ce70;
+                  "
+                >
+                  <a
+                    href="https://wa.me/15866125270"
+                    style="color: white; text-decoration: none"
+                  >
+                    <b>WhatsApp</b>
+                  </a>
+                </button>
               </td>
             </tr>
           </table>
@@ -335,6 +404,11 @@ export async function POST(req) {
               padding: 1em;
             "
           >
+            <tr>
+              <td style="text-align: center" colspan="2">
+                <p style="color: #3a6b83"><b> Motores de Orbitrol</b></p>
+              </td>
+            </tr>
             <tr>
               <td
                 width="50%"
@@ -370,6 +444,43 @@ export async function POST(req) {
                 <p style="color: #3a6b83">
                   Material para entrega <b>rápida</b>.
                 </p>
+                <button
+                  type="button"
+                  style="
+                    margin-top: 1em;
+                    background-color: #016698;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    border-color: #016698;
+                  "
+                >
+                  <a
+                    href="https://email.tu.biz/my/otherimage/charlynn/${email} "
+                    style="color: white; text-decoration: none"
+                  >
+                    <b>Ver más</b>
+                  </a>
+                </button>
+                &nbsp;
+                <button
+                  type="button"
+                  style="
+                    margin-top: 1em;
+                    background-color: #51ce70;
+                    color: white;
+                    padding: 0.5em;
+                    border-radius: 5px;
+                    border-color: #51ce70;
+                  "
+                >
+                  <a
+                    href="https://wa.me/15866125270"
+                    style="color: white; text-decoration: none"
+                  >
+                    <b>WhatsApp</b>
+                  </a>
+                </button>
               </td>
             </tr>
           </table>
@@ -575,12 +686,12 @@ export async function POST(req) {
 </html>
 
     `,
-    dsn: {
-      id: `${nameFull} | ${title}`,
-      return: "headers",
-      notify: "success",
-      recipient: `${email}`,
-    },
+    // dsn: {
+    //   id: `${nameFull} | ${title}`,
+    //   return: "headers",
+    //   notify: "success",
+    //   recipient: `${email}`,
+    // },
   };
 
   await new Promise((resolve, reject) => {

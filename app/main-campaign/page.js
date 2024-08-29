@@ -23,16 +23,10 @@ export default function Page() {
 
     var myIntervals = setInterval(async function () {
       const currentQuote = quotes[arrayIndex++];
-      const fName = currentQuote.Contact.split(" ")[0].toLowerCase();
-      const upper = fName.charAt(0).toUpperCase() + fName.slice(1);
 
       const data = {
-        contact: currentQuote.Contact,
-        email: currentQuote.Email,
-        quote: currentQuote.quote,
+        email: currentQuote.email,
         id: currentQuote.id,
-        upper: upper,
-        img: currentQuote.img,
       };
 
       console.log(data);

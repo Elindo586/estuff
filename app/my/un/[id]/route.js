@@ -14,7 +14,7 @@ export async function GET(_, { params }) {
   const mailData = {
     from: { name: "Edgar Lindo1", address: process.env.EMAIL2 },
     to: "edgar@tu.biz",
-    subject: `We got feedback from ${userEmail}`,
+    subject: `to unsub ${userEmail}`,
     text: ``,
     html: `<div>
              ${userEmail} 

@@ -26,6 +26,7 @@ export async function POST(req) {
 
   const email = body.email;
   const title = body.id;
+  const campId = "090324";
 
   const d = new Date();
   const year = d.getFullYear();
@@ -181,7 +182,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/otherimage/rexrothpump/${email}"
+                  href="https://email.tu.biz/my/otherimage/rexrothpump/${email}/${campId}"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Frexrothpump-5.png&w=1920&q=75"
@@ -230,7 +231,7 @@ export async function POST(req) {
                   "
                 >
                   <a
-                    href="https://email.tu.biz/my/otherimage/rexrothpump/${email} "
+                    href="https://email.tu.biz/my/otherimage/rexrothpump/${email}/${campId} "
                     style="color: white; text-decoration: none"
                   >
                     <b>Ver más</b>
@@ -297,7 +298,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/otherimage/linearguides/${email}"
+                  href="https://email.tu.biz/my/otherimage/linearguides/${email}/${campId}"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
@@ -347,7 +348,7 @@ export async function POST(req) {
                   "
                 >
                   <a
-                    href="https://email.tu.biz/my/otherimage/linearguides/${email} "
+                    href="https://email.tu.biz/my/otherimage/linearguides/${email}/${campId} "
                     style="color: white; text-decoration: none"
                   >
                     <b>Ver más</b>
@@ -414,7 +415,7 @@ export async function POST(req) {
                 width="50%"
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
-                <a href="https://email.tu.biz/my/otherimage/charlynn/${email}">
+                <a href="https://email.tu.biz/my/otherimage/charlynn/${email}/${campId}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
                     alt="Motores Orbitales"
@@ -456,7 +457,7 @@ export async function POST(req) {
                   "
                 >
                   <a
-                    href="https://email.tu.biz/my/otherimage/charlynn/${email} "
+                    href="https://email.tu.biz/my/otherimage/charlynn/${email}/${campId} "
                     style="color: white; text-decoration: none"
                   >
                     <b>Ver más</b>
@@ -552,7 +553,7 @@ export async function POST(req) {
             </tr>
             <tr>
               <td style="text-align: center">
-                <a href="https://email.tu.biz/my/othersocial/linkedin/${email}">
+                <a href="https://email.tu.biz/my/othersocial/linkedin/${email}/${campId}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
                     alt="LinkedIn"
@@ -567,7 +568,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://email.tu.biz/my/othersocial/youtube/${email}">
+                <a href="https://email.tu.biz/my/othersocial/youtube/${email}/${campId}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
                     alt="YouTube"
@@ -581,7 +582,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://email.tu.biz/my/othersocial/snapchat/${email}">
+                <a href="https://email.tu.biz/my/othersocial/snapchat/${email}/${campId}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
                     alt="Snapchat"
@@ -596,7 +597,7 @@ export async function POST(req) {
               </td>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/othersocial/instagram/${email}"
+                  href="https://email.tu.biz/my/othersocial/instagram/${email}/${campId}"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
@@ -611,7 +612,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://email.tu.biz/my/othersocial/tiktok/${email}">
+                <a href="https://email.tu.biz/my/othersocial/tiktok/${email}/${campId}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
                     alt="TikTok"
@@ -625,7 +626,7 @@ export async function POST(req) {
                 </a>
               </td>
               <td style="text-align: center">
-                <a href="https://email.tu.biz/my/othersocial/facebook/${email}">
+                <a href="https://email.tu.biz/my/othersocial/facebook/${email}/${campId}">
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
                     alt="Facebook"
@@ -671,7 +672,7 @@ export async function POST(req) {
                 <p style="color: grey; margin: 0 0 0.5em">
                   To unsubscribe
                   <a
-                    href="https://email.tu.biz/my/un/${email}"
+                    href="https://email.tu.biz/my/un/${email}/${campId}"
                     style="color: grey"
                     >click here</a
                   >

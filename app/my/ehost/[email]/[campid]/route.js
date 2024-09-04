@@ -1,4 +1,5 @@
 import { sql } from "@vercel/postgres";
+import { NextResponse } from "next/server";
 
 export async function GET(_, { params }) {
   const email = params.email;
@@ -726,12 +727,14 @@ export async function GET(_, { params }) {
       </tr>
     </table>
   </body>
-</html>
+  </html>
+  `;
 
+  // return new Response(htmlResponse, {
+  //   headers: { "Content-Type": "text/html" },
+  // });
 
-    `;
-
-  return new Response(htmlResponse, {
+  return NextResponse(htmlResponse, {
     headers: { "Content-Type": "text/html" },
   });
 }

@@ -221,43 +221,59 @@ export async function POST(req) {
                 <p style="color: #3a6b83">
                   Intercambios directos todo en <b>STOCK</b>
                 </p>
-                <button
-                  type="button"
-                  style="
-                    margin-top: 1em;
-                    background-color: #016698;
-                    color: white;
-                    padding: 0.5em;
-                    border-radius: 5px;
-                    border-color: #016698;
-                  "
+
+                <!-- Button links -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  style="margin-top: 1em"
                 >
-                  <a
-                    href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId} "
-                    style="color: white; text-decoration: none"
-                  >
-                    <b>Ver más</b>
-                  </a>
-                </button>
-                &nbsp;
-                <button
-                  type="button"
-                  style="
-                    margin-top: 1em;
-                    background-color: #51ce70;
-                    color: white;
-                    padding: 0.5em;
-                    border-radius: 5px;
-                    border-color: #51ce70;
-                  "
-                >
-                  <a
-                    href="https://wa.me/15866125270"
-                    style="color: white; text-decoration: none"
-                  >
-                    <b>WhatsApp</b>
-                  </a>
-                </button>
+                  <tr>
+                    <td
+                      align="center"
+                      style="border-radius: 5px"
+                      bgcolor="#016698"
+                    >
+                      <a
+                        href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                        style="
+                          display: inline-block;
+                          color: white;
+                          text-decoration: none;
+                          padding: 0.5em 1em;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          font-size: 16px;
+                        "
+                      >
+                        Ver más
+                      </a>
+                    </td>
+                    <td width="10"></td>
+                    <!-- Spacer -->
+                    <td
+                      align="center"
+                      style="border-radius: 5px"
+                      bgcolor="#51ce70"
+                    >
+                      <a
+                        href="https://wa.me/15866125270"
+                        style="
+                          display: inline-block;
+                          color: white;
+                          text-decoration: none;
+                          padding: 0.5em 1em;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          font-size: 16px;
+                        "
+                      >
+                        WhatsApp
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -338,43 +354,59 @@ export async function POST(req) {
                   <b> Soporte</b> técnico y comercial para crecimiento de su
                   empresa.
                 </p>
-                <button
-                  type="button"
-                  style="
-                    margin-top: 1em;
-                    background-color: #016698;
-                    color: white;
-                    padding: 0.5em;
-                    border-radius: 5px;
-                    border-color: #016698;
-                  "
+
+                <!-- Button links -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  style="margin-top: 1em"
                 >
-                  <a
-                    href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
-                    style="color: white; text-decoration: none"
-                  >
-                    <b>Ver más</b>
-                  </a>
-                </button>
-                &nbsp;
-                <button
-                  type="button"
-                  style="
-                    margin-top: 1em;
-                    background-color: #51ce70;
-                    color: white;
-                    padding: 0.5em;
-                    border-radius: 5px;
-                    border-color: #51ce70;
-                  "
-                >
-                  <a
-                    href="https://wa.me/15866125270"
-                    style="color: white; text-decoration: none"
-                  >
-                    <b>WhatsApp</b>
-                  </a>
-                </button>
+                  <tr>
+                    <td
+                      align="center"
+                      style="border-radius: 5px"
+                      bgcolor="#016698"
+                    >
+                      <a
+                        href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                        style="
+                          display: inline-block;
+                          color: white;
+                          text-decoration: none;
+                          padding: 0.5em 1em;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          font-size: 16px;
+                        "
+                      >
+                        Ver más
+                      </a>
+                    </td>
+                    <td width="10"></td>
+                    <!-- Spacer -->
+                    <td
+                      align="center"
+                      style="border-radius: 5px"
+                      bgcolor="#51ce70"
+                    >
+                      <a
+                        href="https://wa.me/15866125270"
+                        style="
+                          display: inline-block;
+                          color: white;
+                          text-decoration: none;
+                          padding: 0.5em 1em;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          font-size: 16px;
+                        "
+                      >
+                        WhatsApp
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -449,43 +481,59 @@ export async function POST(req) {
                 <p style="color: #3a6b83">
                   Material para entrega <b>rápida</b>.
                 </p>
-                <button
-                  type="button"
-                  style="
-                    margin-top: 1em;
-                    background-color: #016698;
-                    color: white;
-                    padding: 0.5em;
-                    border-radius: 5px;
-                    border-color: #016698;
-                  "
+
+                <!-- Button links -->
+                <table
+                  border="0"
+                  cellspacing="0"
+                  cellpadding="0"
+                  style="margin-top: 1em"
                 >
-                  <a
-                    href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
-                    style="color: white; text-decoration: none"
-                  >
-                    <b>Ver más</b>
-                  </a>
-                </button>
-                &nbsp;
-                <button
-                  type="button"
-                  style="
-                    margin-top: 1em;
-                    background-color: #51ce70;
-                    color: white;
-                    padding: 0.5em;
-                    border-radius: 5px;
-                    border-color: #51ce70;
-                  "
-                >
-                  <a
-                    href="https://wa.me/15866125270"
-                    style="color: white; text-decoration: none"
-                  >
-                    <b>WhatsApp</b>
-                  </a>
-                </button>
+                  <tr>
+                    <td
+                      align="center"
+                      style="border-radius: 5px"
+                      bgcolor="#016698"
+                    >
+                      <a
+                        href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                        style="
+                          display: inline-block;
+                          color: white;
+                          text-decoration: none;
+                          padding: 0.5em 1em;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          font-size: 16px;
+                        "
+                      >
+                        Ver más
+                      </a>
+                    </td>
+                    <td width="10"></td>
+                    <!-- Spacer -->
+                    <td
+                      align="center"
+                      style="border-radius: 5px"
+                      bgcolor="#51ce70"
+                    >
+                      <a
+                        href="https://wa.me/15866125270"
+                        style="
+                          display: inline-block;
+                          color: white;
+                          text-decoration: none;
+                          padding: 0.5em 1em;
+                          font-weight: bold;
+                          border-radius: 5px;
+                          font-size: 16px;
+                        "
+                      >
+                        WhatsApp
+                      </a>
+                    </td>
+                  </tr>
+                </table>
               </td>
             </tr>
           </table>
@@ -699,6 +747,7 @@ export async function POST(req) {
     </table>
   </body>
 </html>
+
 
     `,
     // dsn: {

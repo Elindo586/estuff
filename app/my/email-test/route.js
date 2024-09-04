@@ -672,7 +672,7 @@ export async function POST(req) {
                 <p style="color: grey; margin: 0 0 0.5em">
                   To unsubscribe
                   <a
-                    href="https://email.tu.biz/my/un/${email}/${campId}"
+                    href="https://email.tu.biz/my/un1/${email}/${campId}"
                     style="color: grey"
                     >click here</a
                   >

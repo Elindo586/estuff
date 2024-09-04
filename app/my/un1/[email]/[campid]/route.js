@@ -1,0 +1,33 @@
+import { sql } from "@vercel/postgres";
+
+export async function GET(request, { params }) {
+  const userEmail = params.email;
+  const campId = params.campid;
+
+  const d = new Date();
+  const month = d.getMonth();
+  const days = d.getDate();
+  const year = d.getFullYear();
+  const hour = d.getHours();
+  const minutes = d.getMinutes();
+  const seconds = d.getSeconds();
+
+  const date = ` ${year}/${month}/${days} at ${hour}:${minutes}:${seconds}s`;
+
+  await sql`INSERT INTO unsub (email, campId, date) VALUES ( ${userEmail}, ${campId}, ${date});`;
+
+  const htmlResponse = `
+      <html>
+        <body style = "color: blue">
+          <div>
+            <div> <h1> Hello, </h1> </div>
+            <div> Your email: ${userEmail} has been unsubscribed. </div>
+          </div>
+        </body>
+      </html>
+    `;
+
+  return new Response(htmlResponse, {
+    headers: { "Content-Type": "text/html" },
+  });
+}

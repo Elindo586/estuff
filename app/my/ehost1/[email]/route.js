@@ -106,7 +106,7 @@ export async function GET(_, { params }) {
         <td style="text-align: center">
           <p style="margin: 0.5em">
             Si no puede ver imágenes, haga
-            <a href="https://email.tu.biz/my/ehost1/${email}">clic aquí</a>
+            <a href="https://email.tu.biz/my/ehost/${email}">clic aquí</a>
             para ver el email en página web.
           </p>
         </td>

@@ -369,7 +369,7 @@ export async function POST(req) {
                       bgcolor="#016698"
                     >
                       <a
-                        href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                        href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
                         style="
                           display: inline-block;
                           color: white;
@@ -496,7 +496,7 @@ export async function POST(req) {
                       bgcolor="#016698"
                     >
                       <a
-                        href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                        href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
                         style="
                           display: inline-block;
                           color: white;

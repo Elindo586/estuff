@@ -1,43 +1,21 @@
-import nodemailer from "nodemailer";
-
-export async function POST(req) {
-  const transporter = nodemailer.createTransport({
-    service: "Outlook365",
-    auth: {
-      user: process.env.EMAIL2,
-      pass: process.env.EPASSWORD2,
-    },
-  });
-
-  await new Promise((resolve, reject) => {
-    // verify connection configuration
-    transporter.verify(function (error, success) {
-      if (error) {
-        console.log(error);
-        reject(error);
-      } else {
-        console.log("Server is ready to take our messages");
-        resolve(success);
-      }
-    });
-  });
-
-  const body = await req.json();
-
-  const email = body.email;
-  const title = body.id;
-  const campId = "090324";
+export async function GET(_, { params }) {
+  const email = params.email;
+  const campId = params.campid;
 
   const d = new Date();
+  const month = d.getMonth();
+  const days = d.getDate();
   const year = d.getFullYear();
+  const hour = d.getHours();
+  const minutes = d.getMinutes();
+  const seconds = d.getSeconds();
 
-  const mailData = {
-    from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
-    to: email,
-    subject: `Bombas de Reemplazo con Rexroth | Guías Lineales | Motores Orbitales | ${title}`,
-    text: ``,
-    html: `
-<!DOCTYPE html>
+  const date = ` ${year}/${month}/${days} at ${hour}:${minutes}:${seconds}s`;
+
+  await sql`INSERT INTO ehost (email, campId, date) VALUES ( ${email}, ${campId}, ${date});`;
+
+  const htmlResponse = `
+      <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -700,25 +678,9 @@ export async function POST(req) {
   </body>
 </html>
 
-    `,
-    // dsn: {
-    //   id: `${nameFull} | ${title}`,
-    //   return: "headers",
-    //   notify: "success",
-    //   recipient: `${email}`,
-    // },
-  };
+    `;
 
-  await new Promise((resolve, reject) => {
-    transporter.sendMail(mailData, function (err, info) {
-      if (err) {
-        console.log(err);
-        reject(err);
-      } else {
-        console.log("email sent");
-        resolve(info);
-      }
-    });
+  return new Response(htmlResponse, {
+    headers: { "Content-Type": "text/html" },
   });
-  return Response.json({ message: "Email sent!" });
 }

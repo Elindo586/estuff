@@ -4,6 +4,7 @@ import { NextResponse } from "next/server";
 export async function GET(_, { params }) {
   const email = params.email;
   const campId = params.campid;
+  const title = params.title;
 
   const d = new Date();
   const month = d.getMonth();
@@ -18,7 +19,7 @@ export async function GET(_, { params }) {
   await sql`INSERT INTO ehost (email, campId, date) VALUES ( ${email}, ${campId}, ${date});`;
 
   const htmlResponse = `
-            <!DOCTYPE html>
+  <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -87,7 +88,7 @@ export async function GET(_, { params }) {
         <td style="text-align: center">
           <p style="margin-bottom: 0.1em; margin-top: 0.1em">
             Si no puede ver imágenes, haga
-            <a href="https://email.tu.biz/my/ehost/${email}/${campId}"
+            <a href="https://email.tu.biz/my/ehost/${email}/${campId}/${title}"
               >clic aquí</a
             >
             para ver el email en página web.
@@ -222,7 +223,7 @@ export async function GET(_, { params }) {
                           display: inline-block;
                           color: white;
                           text-decoration: none;
-                          padding: 0.5em 1em;
+                          padding: 0.8em;
                           font-weight: bold;
                           border-radius: 5px;
                           font-size: 15px;
@@ -244,7 +245,7 @@ export async function GET(_, { params }) {
                           display: inline-block;
                           color: white;
                           text-decoration: none;
-                          padding: 0.5em 1em;
+                          padding: 0.8em;
                           font-weight: bold;
                           border-radius: 5px;
                           font-size: 15px;
@@ -355,7 +356,7 @@ export async function GET(_, { params }) {
                           display: inline-block;
                           color: white;
                           text-decoration: none;
-                          padding: 0.5em 1em;
+                          padding: 0.8em;
                           font-weight: bold;
                           border-radius: 5px;
                           font-size: 15px;
@@ -377,7 +378,7 @@ export async function GET(_, { params }) {
                           display: inline-block;
                           color: white;
                           text-decoration: none;
-                          padding: 0.5em 1em;
+                          padding: 0.8em;
                           font-weight: bold;
                           border-radius: 5px;
                           font-size: 15px;
@@ -482,7 +483,7 @@ export async function GET(_, { params }) {
                           display: inline-block;
                           color: white;
                           text-decoration: none;
-                          padding: 0.5em 1em;
+                          padding: 0.8em;
                           font-weight: bold;
                           border-radius: 5px;
                           font-size: 15px;
@@ -504,7 +505,7 @@ export async function GET(_, { params }) {
                           display: inline-block;
                           color: white;
                           text-decoration: none;
-                          padding: 0.5em 1em;
+                          padding: 0.8em;
                           font-weight: bold;
                           border-radius: 5px;
                           font-size: 15px;
@@ -728,6 +729,7 @@ export async function GET(_, { params }) {
     </table>
   </body>
 </html>
+         
 
   `;
 

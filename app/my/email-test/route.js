@@ -232,7 +232,7 @@ export async function POST(req) {
                   <tr>
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#016698"
                     >
                       <a
@@ -244,7 +244,7 @@ export async function POST(req) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         Ver más
@@ -254,7 +254,7 @@ export async function POST(req) {
                     <!-- Spacer -->
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
                       <a
@@ -266,7 +266,7 @@ export async function POST(req) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         WhatsApp
@@ -365,7 +365,7 @@ export async function POST(req) {
                   <tr>
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#016698"
                     >
                       <a
@@ -377,7 +377,7 @@ export async function POST(req) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         Ver más
@@ -387,7 +387,7 @@ export async function POST(req) {
                     <!-- Spacer -->
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
                       <a
@@ -399,7 +399,7 @@ export async function POST(req) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         WhatsApp
@@ -492,7 +492,7 @@ export async function POST(req) {
                   <tr>
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#016698"
                     >
                       <a
@@ -504,7 +504,7 @@ export async function POST(req) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         Ver más
@@ -514,7 +514,7 @@ export async function POST(req) {
                     <!-- Spacer -->
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
                       <a
@@ -526,7 +526,7 @@ export async function POST(req) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         WhatsApp
@@ -747,7 +747,6 @@ export async function POST(req) {
     </table>
   </body>
 </html>
-
 
     `,
     // dsn: {

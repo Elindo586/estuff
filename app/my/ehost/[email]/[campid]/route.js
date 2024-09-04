@@ -18,7 +18,7 @@ export async function GET(_, { params }) {
   await sql`INSERT INTO ehost (email, campId, date) VALUES ( ${email}, ${campId}, ${date});`;
 
   const htmlResponse = `
-      <!DOCTYPE html>
+            <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -213,7 +213,7 @@ export async function GET(_, { params }) {
                   <tr>
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#016698"
                     >
                       <a
@@ -225,7 +225,7 @@ export async function GET(_, { params }) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         Ver más
@@ -235,7 +235,7 @@ export async function GET(_, { params }) {
                     <!-- Spacer -->
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
                       <a
@@ -247,7 +247,7 @@ export async function GET(_, { params }) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         WhatsApp
@@ -346,7 +346,7 @@ export async function GET(_, { params }) {
                   <tr>
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#016698"
                     >
                       <a
@@ -358,7 +358,7 @@ export async function GET(_, { params }) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         Ver más
@@ -368,7 +368,7 @@ export async function GET(_, { params }) {
                     <!-- Spacer -->
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
                       <a
@@ -380,7 +380,7 @@ export async function GET(_, { params }) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         WhatsApp
@@ -473,7 +473,7 @@ export async function GET(_, { params }) {
                   <tr>
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#016698"
                     >
                       <a
@@ -485,7 +485,7 @@ export async function GET(_, { params }) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         Ver más
@@ -495,7 +495,7 @@ export async function GET(_, { params }) {
                     <!-- Spacer -->
                     <td
                       align="center"
-                      style="border-radius: 5px"
+                      style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
                       <a
@@ -507,7 +507,7 @@ export async function GET(_, { params }) {
                           padding: 0.5em 1em;
                           font-weight: bold;
                           border-radius: 5px;
-                          font-size: 16px;
+                          font-size: 15px;
                         "
                       >
                         WhatsApp
@@ -727,14 +727,15 @@ export async function GET(_, { params }) {
       </tr>
     </table>
   </body>
-  </html>
+</html>
+
   `;
 
   // return new Response(htmlResponse, {
   //   headers: { "Content-Type": "text/html" },
   // });
 
-  return NextResponse(htmlResponse, {
+  return new NextResponse(htmlResponse, {
     headers: { "Content-Type": "text/html" },
   });
 }

@@ -79,6 +79,11 @@ export async function POST(req) {
           margin: 0 auto;
           display: block;
         }
+        .tbutton {
+          width: 75% !important;
+          margin-left: auto;
+          margin-right: auto;
+        }
       }
     </style>
   </head>
@@ -228,6 +233,7 @@ export async function POST(req) {
                   cellspacing="0"
                   cellpadding="0"
                   style="margin-top: 1em"
+                  class="tbutton"
                 >
                   <tr>
                     <td
@@ -365,12 +371,14 @@ export async function POST(req) {
                   cellspacing="0"
                   cellpadding="0"
                   style="margin-top: 1em"
+                  class="tbutton"
                 >
-                  <tr>
+                  <tr class="buttonsT">
                     <td
                       align="center"
                       style="border-radius: 15px"
                       bgcolor="#016698"
+                      class="buttonsT"
                     >
                       <p style="margin: 0.5em">
                         <a
@@ -395,6 +403,7 @@ export async function POST(req) {
                       align="center"
                       style="border-radius: 15px"
                       bgcolor="#51ce70"
+                      class="buttonsT"
                     >
                       <p style="margin: 0.5em">
                         <a
@@ -496,6 +505,7 @@ export async function POST(req) {
                   cellspacing="0"
                   cellpadding="0"
                   style="margin-top: 1em"
+                  class="tbutton"
                 >
                   <tr>
                     <td

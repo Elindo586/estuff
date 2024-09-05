@@ -19,7 +19,7 @@ export async function GET(_, { params }) {
   await sql`INSERT INTO ehost (email, campId, date) VALUES ( ${email}, ${campId}, ${date});`;
 
   const htmlResponse = `
-  <!DOCTYPE html>
+ <!DOCTYPE html>
 <html>
   <head>
     <meta charset="UTF-8" />
@@ -60,6 +60,11 @@ export async function GET(_, { params }) {
         .two-column td img {
           margin: 0 auto;
           display: block;
+        }
+        .tbutton {
+          width: 75% !important;
+          margin-left: auto;
+          margin-right: auto;
         }
       }
     </style>
@@ -210,6 +215,7 @@ export async function GET(_, { params }) {
                   cellspacing="0"
                   cellpadding="0"
                   style="margin-top: 1em"
+                  class="tbutton"
                 >
                   <tr>
                     <td
@@ -217,20 +223,22 @@ export async function GET(_, { params }) {
                       style="border-radius: 15px"
                       bgcolor="#016698"
                     >
-                      <a
-                        href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
-                        style="
-                          display: inline-block;
-                          color: white;
-                          text-decoration: none;
-                          padding: 0.8em;
-                          font-weight: bold;
-                          border-radius: 5px;
-                          font-size: 15px;
-                        "
-                      >
-                        Ver más
-                      </a>
+                      <p style="margin: 0.5em">
+                        <a
+                          href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                          style="
+                            display: inline-block;
+                            color: white;
+                            text-decoration: none;
+                            padding: 0;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            font-size: 15px;
+                          "
+                        >
+                          Ver más
+                        </a>
+                      </p>
                     </td>
                     <td width="10"></td>
                     <!-- Spacer -->
@@ -239,20 +247,22 @@ export async function GET(_, { params }) {
                       style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
-                      <a
-                        href="https://wa.me/15866125270"
-                        style="
-                          display: inline-block;
-                          color: white;
-                          text-decoration: none;
-                          padding: 0.8em;
-                          font-weight: bold;
-                          border-radius: 5px;
-                          font-size: 15px;
-                        "
-                      >
-                        WhatsApp
-                      </a>
+                      <p style="margin: 0.5em">
+                        <a
+                          href="https://wa.me/15866125270"
+                          style="
+                            display: inline-block;
+                            color: white;
+                            text-decoration: none;
+                            padding: 0;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            font-size: 15px;
+                          "
+                        >
+                          WhatsApp
+                        </a>
+                      </p>
                     </td>
                   </tr>
                 </table>
@@ -343,27 +353,31 @@ export async function GET(_, { params }) {
                   cellspacing="0"
                   cellpadding="0"
                   style="margin-top: 1em"
+                  class="tbutton"
                 >
-                  <tr>
+                  <tr class="buttonsT">
                     <td
                       align="center"
                       style="border-radius: 15px"
                       bgcolor="#016698"
+                      class="buttonsT"
                     >
-                      <a
-                        href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
-                        style="
-                          display: inline-block;
-                          color: white;
-                          text-decoration: none;
-                          padding: 0.8em;
-                          font-weight: bold;
-                          border-radius: 5px;
-                          font-size: 15px;
-                        "
-                      >
-                        Ver más
-                      </a>
+                      <p style="margin: 0.5em">
+                        <a
+                          href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
+                          style="
+                            display: inline-block;
+                            color: white;
+                            text-decoration: none;
+                            padding: 0;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            font-size: 15px;
+                          "
+                        >
+                          Ver más
+                        </a>
+                      </p>
                     </td>
                     <td width="10"></td>
                     <!-- Spacer -->
@@ -371,21 +385,24 @@ export async function GET(_, { params }) {
                       align="center"
                       style="border-radius: 15px"
                       bgcolor="#51ce70"
+                      class="buttonsT"
                     >
-                      <a
-                        href="https://wa.me/15866125270"
-                        style="
-                          display: inline-block;
-                          color: white;
-                          text-decoration: none;
-                          padding: 0.8em;
-                          font-weight: bold;
-                          border-radius: 5px;
-                          font-size: 15px;
-                        "
-                      >
-                        WhatsApp
-                      </a>
+                      <p style="margin: 0.5em">
+                        <a
+                          href="https://wa.me/15866125270"
+                          style="
+                            display: inline-block;
+                            color: white;
+                            text-decoration: none;
+                            padding: 0;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            font-size: 15px;
+                          "
+                        >
+                          WhatsApp
+                        </a>
+                      </p>
                     </td>
                   </tr>
                 </table>
@@ -470,6 +487,7 @@ export async function GET(_, { params }) {
                   cellspacing="0"
                   cellpadding="0"
                   style="margin-top: 1em"
+                  class="tbutton"
                 >
                   <tr>
                     <td
@@ -477,20 +495,22 @@ export async function GET(_, { params }) {
                       style="border-radius: 15px"
                       bgcolor="#016698"
                     >
-                      <a
-                        href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
-                        style="
-                          display: inline-block;
-                          color: white;
-                          text-decoration: none;
-                          padding: 0.8em;
-                          font-weight: bold;
-                          border-radius: 5px;
-                          font-size: 15px;
-                        "
-                      >
-                        Ver más
-                      </a>
+                      <p style="margin: 0.5em">
+                        <a
+                          href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
+                          style="
+                            display: inline-block;
+                            color: white;
+                            text-decoration: none;
+                            padding: 0;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            font-size: 15px;
+                          "
+                        >
+                          Ver más
+                        </a>
+                      </p>
                     </td>
                     <td width="10"></td>
                     <!-- Spacer -->
@@ -499,20 +519,22 @@ export async function GET(_, { params }) {
                       style="border-radius: 15px"
                       bgcolor="#51ce70"
                     >
-                      <a
-                        href="https://wa.me/15866125270"
-                        style="
-                          display: inline-block;
-                          color: white;
-                          text-decoration: none;
-                          padding: 0.8em;
-                          font-weight: bold;
-                          border-radius: 5px;
-                          font-size: 15px;
-                        "
-                      >
-                        WhatsApp
-                      </a>
+                      <p style="margin: 0.5em">
+                        <a
+                          href="https://wa.me/15866125270"
+                          style="
+                            display: inline-block;
+                            color: white;
+                            text-decoration: none;
+                            padding: 0;
+                            font-weight: bold;
+                            border-radius: 5px;
+                            font-size: 15px;
+                          "
+                        >
+                          WhatsApp
+                        </a>
+                      </p>
                     </td>
                   </tr>
                 </table>
@@ -729,6 +751,7 @@ export async function GET(_, { params }) {
     </table>
   </body>
 </html>
+
          
 
   `;

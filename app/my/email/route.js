@@ -28,6 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
+  const campId = "q9-25-24";
   // const img = body.img;
 
   const textArray = quote;
@@ -56,8 +57,9 @@ export async function POST(req) {
 
     
     <div><pre>${contents}</pre></div> <br/>
-    <div> Por aparte le comento que tengo muchos otros productos disponibles, incluyendo Guías Lineales. <div/>
+    <div> Por aparte le comento que tengo muchos otros productos disponibles, incluyendo Guías Lineales, Controladores y Drives. <div/>
     <div> Para más información puede visitar: <a href= "https://www.tu.biz/castellano/productos" > www.tu.biz/castellano/productos </a>  </div> <br/>
+    <div> Para más información en CONTROLADORES y DRIVES puede visitar: <a href= "https://email.tu.biz/my/ehost-quote/${email}/${campId}/iis" > Industrial Indexing </a>  </div> <br/>
     <div> Saludos, </div> <br/>
     <div> Edgar Lindo </div> <br/>
       

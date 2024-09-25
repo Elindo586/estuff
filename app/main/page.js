@@ -37,7 +37,7 @@ export default function Page() {
 
       console.log(data);
 
-      const response = await fetch("/my/email-test", {
+      const response = await fetch("/my/email", {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",

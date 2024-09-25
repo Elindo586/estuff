@@ -16,7 +16,7 @@ export async function GET(request, { params }) {
 
   const date = ` ${year}/${month}/${days} at ${hour}:${minutes}:${seconds}s`;
 
-  await sql`INSERT INTO social (product, email, campId, date) VALUES ( ${product}, ${userEmail}, ${campId}, ${date});`;
+  await sql`INSERT INTO product (product, email, campId, date) VALUES ( ${product}, ${userEmail}, ${campId}, ${date});`;
   const redirectUrl = new URL(
     "https://www.iis-servo.com/products/",
     request.url

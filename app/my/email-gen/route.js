@@ -28,7 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
-  const campId = "q9-25-24";
+  const campId = "10/15/24";
   // const img = body.img;
 
   const textArray = quote;
@@ -47,19 +47,35 @@ export async function POST(req) {
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
-    subject: `cotizaciones para ${nameFull} | ${title}`,
+    subject: `Hidráulica | Electro-Mecánica para  ${nameFull} `,
     text: ``,
     html: `
     <div> 
     <div>Hola ${nameFirst},</div> <br>
 
-    <div>Todo bien con su cotización? Necesita algo más?</div> <br>
+    <div>Como va todo?</div> <br>
+    <div> Ustedes tambien trabajan con electro-mecánica?</div> <br/>
+    <div> Abajo una reseña de productos para automatización industrial para su consideración en el mercado. <div/> <br/> 
+    <div> Productos Fluidyne <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/fluidyne "> literatura hidráulica </a> <div/>
+    <div> Bombas de:  </div> 
+    <div> Pistones tipo Vickers </div>
+    <div> Pistones tipo Rexroth A10V y A4V </div>
+    <div> Paletas: tipo Vickers y Denison </div>
+    <div> Engranes: bombas C101 y C102 de volteo, y bombas de aluminio </div> <br/>
+    <div> Motores hidráulicos tipo Charlynn, pero también intercambiables con muchas marcas. </div> <br/> 
+    <div> Válvulas direccionales y de presión estándar.</div> <br/> 
+    <div> Productos WON Linear  <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/won-linear "> literatura mecánica </a> </div> 
+    <div> Todas las guías lineales y ballscrews para automatización electro-mecánica.</div>
+    <div> Muchas de estas piezas pueden reemplazar guías como las de THK.</div> <br>
+    <div> Industrial Indexing Systems: </div>
+    <div> <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/iss-applications "> Aplicaciones electro-mecánicas </a></div>
+    <div> <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/iss-products "> Productos de control. </a></div>
+    <div> Servo controladores</div>
+    <div> Drives </div>
+    <div> Amplificadores Toshiba</div>
+    <div> Servo motores modificados para aplicaciones.</div>
+    <div> Software y programación completa para cualquier proyecto.</div><br/>
 
-    
-    <div><pre>${contents}</pre></div> <br/>
-    <div> Por aparte le comento que tengo muchos otros productos disponibles, incluyendo Guías Lineales, Controladores y Drives. <div/>
-    <div> Para más información puede visitar: <a href= "https://www.tu.biz/castellano/productos" > www.tu.biz/castellano/productos </a>  </div> <br/>
-    <div> Para más información en CONTROLADORES y DRIVES puede visitar: <a href= "https://email.tu.biz/my/ehost-quote/${email}/${campId}/iis" > Industrial Indexing </a>  </div> <br/>
     <div> Saludos, </div> <br/>
     <div> Edgar Lindo </div> <br/>
       

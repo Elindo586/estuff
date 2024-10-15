@@ -24,7 +24,7 @@ export async function GET(request, { params }) {
 
   switch (product) {
     case "fluidyne":
-      redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx  ";
+      redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx ";
       break;
     case "won-linear":
       redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";

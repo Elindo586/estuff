@@ -28,7 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
-  const campId = "10/15/24";
+  const campId = "10-15-24";
   // const img = body.img;
 
   const textArray = quote;
@@ -56,23 +56,23 @@ export async function POST(req) {
     <div>Como va todo?</div> <br>
     <div> Ustedes tambien trabajan con electro-mecánica?</div> <br/>
     <div> Abajo una reseña de productos para automatización industrial para su consideración en el mercado. <div/> <br/> 
-    <div> Productos Fluidyne <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/fluidyne "> literatura hidráulica </a> <div/>
+    <div> Productos <span style="background-color: #FFFF00">Fluidyne</span>: <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/fluidyne "> literatura hidráulica </a> <div/>
     <div> Bombas de:  </div> 
-    <div> Pistones tipo Vickers </div>
-    <div> Pistones tipo Rexroth A10V y A4V </div>
-    <div> Paletas: tipo Vickers y Denison </div>
-    <div> Engranes: bombas C101 y C102 de volteo, y bombas de aluminio </div> <br/>
+    <div> Pistones tipo Vickers. </div>
+    <div> Pistones tipo Rexroth A10V y A4V. </div>
+    <div> Paletas: tipo Vickers y Denison. </div>
+    <div> Engranes: bombas C101 y C102 de volteo, y bombas de aluminio. </div> <br/>
     <div> Motores hidráulicos tipo Charlynn, pero también intercambiables con muchas marcas. </div> <br/> 
     <div> Válvulas direccionales y de presión estándar.</div> <br/> 
-    <div> Productos WON Linear  <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/won-linear "> literatura mecánica </a> </div> 
+    <div> Productos <span style = "background-color: #FFFF00" > WON Linear</span>: <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/won-linear "> literatura mecánica </a> </div> 
     <div> Todas las guías lineales y ballscrews para automatización electro-mecánica.</div>
     <div> Muchas de estas piezas pueden reemplazar guías como las de THK.</div> <br>
-    <div> Industrial Indexing Systems: </div>
-    <div> <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/iss-applications "> Aplicaciones electro-mecánicas </a></div>
-    <div> <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/iss-products "> Productos de control. </a></div>
-    <div> Servo controladores</div>
-    <div> Drives </div>
-    <div> Amplificadores Toshiba</div>
+    <div> Productos de <span style="background-color: #FFFF00">Industrial Indexing Systems</span>: </div>
+    <div> IIS <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/iss-applications "> Aplicaciones electro-mecánicas </a></div>
+    <div> ISS <a href= "https://email.tu.biz/my/email-follow/${email}/${campId}/iss-products "> Productos de control. </a></div>
+    <div> Servo controladores.</div>
+    <div> Drives. </div>
+    <div> Amplificadores Toshiba.</div>
     <div> Servo motores modificados para aplicaciones.</div>
     <div> Software y programación completa para cualquier proyecto.</div><br/>
 
@@ -84,12 +84,12 @@ export async function POST(req) {
    
     </div>
     `,
-    dsn: {
-      id: `${nameFull} | ${title}`,
-      return: "headers",
-      notify: "success",
-      recipient: `${email}`,
-    },
+    // dsn: {
+    //   id: `${nameFull} | ${title}`,
+    //   return: "headers",
+    //   notify: "success",
+    //   recipient: `${email}`,
+    // },
   };
 
   await new Promise((resolve, reject) => {

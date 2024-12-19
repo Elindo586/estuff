@@ -2,7 +2,7 @@
 
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import quotes from "../../thejsons/test-emails.json";
+import quotes from "../../thejsons/02-quotes10-30-24-raw.json";
 
 export default function Page() {
   const handleSubmit = () => {
@@ -36,7 +36,7 @@ export default function Page() {
 
       console.log(data);
 
-      const response = await fetch("/my/email-gen", {
+      const response = await fetch("/my/email", {
         method: "POST",
         headers: {
           Accept: "application/json, text/plain, */*",
@@ -75,7 +75,7 @@ export default function Page() {
         clearInterval(myIntervals);
         arrayIndex = 0;
       }
-    }, 5 * 1000);
+    }, 4 * 1000);
   };
 
   return (

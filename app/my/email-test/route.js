@@ -124,7 +124,7 @@ export async function POST(req) {
             >
             para ver el email en página web.
           </p>
-          // <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p>
+         
         </td>
       </tr>
       <tr>

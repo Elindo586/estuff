@@ -28,7 +28,7 @@ export async function GET(request, { params }) {
   // return NextResponse.redirect(redirectUrl0);
 
   const redirectUrl = new URL(
-    "https://www.iis-servo.com/products/",
+    "https://www.tu.biz/castellano/productos",
     request.url
   );
 

@@ -117,14 +117,14 @@ export async function POST(req) {
     >
       <tr>
         <td style="text-align: center">
-          <p style="margin-bottom: 0.1em; margin-top: 0.1em">
+          <p style="margin-bottom: 0.2em; margin-top: 0.1em">
             Si no puede ver imágenes, haga
             <a href="https://email.tu.biz/my/ehost/${email}/${campId}/${title}"
               >clic aquí</a
             >
             para ver el email en página web.
           </p>
-          <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p>
+          // <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p>
         </td>
       </tr>
       <tr>

@@ -478,7 +478,7 @@ export async function POST(req) {
                   href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcontroller.png&w=1920&q=75"
                     alt="Motores Orbitales"
                     style="
                       max-width: 100%;

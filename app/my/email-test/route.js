@@ -475,7 +475,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
+                  href="https://email.tu.biz/my/image/controller/${email}/${campId}"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcontroller.png&w=1920&q=75"

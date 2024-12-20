@@ -20,10 +20,24 @@ export async function GET(request, { params }) {
   await sql`INSERT INTO image (image, email, campId, date) VALUES ( ${image}, ${email}, ${campId}, ${date});`;
 
   // Ensure you use `request.url` if `request` is used
+  // const redirectUrl0 = new URL(
+  //   "https://www.tu.biz/castellano/productos",
+  //   request.url
+  // );
+
+  // return NextResponse.redirect(redirectUrl0);
+
   const redirectUrl = new URL(
-    "https://www.tu.biz/castellano/productos",
+    "https://www.iis-servo.com/products/",
     request.url
   );
 
+  switch (image) {
+    
+    case "controller":
+      redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
+      break;
+  }
   return NextResponse.redirect(redirectUrl);
+
 }

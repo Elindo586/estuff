@@ -42,7 +42,7 @@ export async function POST(req) {
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
-    subject: `Bombas de Reemplazo con Rexroth | Guías Lineales | Motores Orbitales | ${title}`,
+    subject: `Bombas de Reemplazo con Rexroth | Guías Lineales | Controladores  | ${title}`,
     text: ``,
     html: `
 <!DOCTYPE html>
@@ -466,7 +466,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Motores de Orbitrol</b></p>
+                <p style="color: #3a6b83"><b> Controladores para Servo Motores</b></p>
               </td>
             </tr>
             <tr>
@@ -493,18 +493,20 @@ export async function POST(req) {
               <td width="50%" style="vertical-align: top; padding-left: 2%">
                 <br />
                 <p style="color: #3a6b83">
-                  Manejamos motores hidráulicos de orbitrol.
+                  Posicionamiento.
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Intercambios</b> directos con <b>Charlynn</b>.
+                indexación.
                 </p>
                 <p style="color: #3a6b83">
-                  También podemos reemplazar casi todas las marcas en el
-                  mercado.
+                    sincronización
                 </p>
-                <br />
+
                 <p style="color: #3a6b83">
-                  Material para entrega <b>rápida</b>.
+                    Aceleración/desaceleración
+                </p> </br>
+                <p style="color: #3a6b83">
+                    Todo para sus aplicaciones de automatizciones para maquinaria
                 </p>
 
                 <!-- Button links -->
@@ -523,7 +525,7 @@ export async function POST(req) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
+                          href="https://email.tu.biz/my/image/controller/${email}/${campId}"
                           style="
                             display: inline-block;
                             color: white;
@@ -777,8 +779,6 @@ export async function POST(req) {
     </table>
   </body>
 </html>
-
-
 
     `,
     // dsn: {

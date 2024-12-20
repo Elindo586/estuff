@@ -113,6 +113,20 @@ export default function Page() {
           // height={166}
           sizes="100vw"
         />
+        
+      </div>
+      <div className={styles.wrapcontroller}>
+        <Image
+          fill={true}
+          src="/images/products/controller.png"
+          alt="Charlynn replacement"
+          title="Charlynn replacement"
+          id="imageId"
+          // width={263}
+          // height={166}
+          sizes="100vw"
+        />
+        
       </div>
     </div>
   );

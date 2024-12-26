@@ -476,6 +476,7 @@ export async function POST(req) {
               >
                 <a
                   href="https://email.tu.biz/my/image/controller/${email}/${campId}"
+                      
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcontroller.png&w=1920&q=75"
@@ -526,6 +527,7 @@ export async function POST(req) {
                       <p style="margin: 0.5em">
                         <a
                           href="https://email.tu.biz/my/image/controller/${email}/${campId}"
+                                
                           style="
                             display: inline-block;
                             color: white;

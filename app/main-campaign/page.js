@@ -64,13 +64,13 @@ export default function Page() {
       );
       console.log(arrayIndex, quotes.length);
 
-      if (arrayIndex === quotes.length) {
+      if (arrayIndex === 900) {
         console.log("We are done!");
 
         clearInterval(myIntervals);
         arrayIndex = 0;
       }
-    }, 5 * 1000);
+    }, 10 * 1000);
   };
 
   return (

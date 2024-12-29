@@ -55,7 +55,7 @@ export async function POST(req) {
     const mailData = {
       from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
       to: email,
-      subject: `Bombas de Reemplazo con Rexroth | Guías Lineales | Controladores  | ${title}`,
+      subject: `Bombas de Reemplazo con Rexroth | Guías Lineales | Controladores  | ${id}`,
       text: ``,
       html: `Testing it baby.`,
     };

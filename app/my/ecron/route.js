@@ -34,9 +34,9 @@ export async function POST(req) {
       user: process.env.EMAIL2,
       pass: process.env.EPASSWORD2,
     },
-    tls: {
-      rejectUnauthorized: false, // Allow self-signed certificates (development only)
-    },
+    // tls: {
+    //   rejectUnauthorized: false, // Allow self-signed certificates (development only)
+    // },
   });
 
   // Verify the connection before starting the interval

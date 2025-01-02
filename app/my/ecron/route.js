@@ -35,7 +35,7 @@ export async function GET(req) {
   await new Promise((resolve, reject) => {
     transporter.verify(function (error, success) {
       if (error) {
-        console.log(error);
+        console.log("Error verifying transporter:", error);
         reject(error);
       } else {
         console.log("Server is ready to take our messages");
@@ -45,8 +45,12 @@ export async function GET(req) {
   });
 
   const sendEmail = async () => {
-    const currentQuote = quotes[arrayIndex];
+    if (arrayIndex >= quotes.length) {
+      console.log("All emails have been sent!");
+      return;
+    }
 
+    const currentQuote = quotes[arrayIndex];
     const email = currentQuote.email;
     const id = currentQuote.id;
 
@@ -67,21 +71,15 @@ export async function GET(req) {
     }
 
     console.log(`We ran ${timesRun} times at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`);
-    console.log(arrayIndex, quotes.length);
-
-    // If all emails are sent, reset index
-    if (arrayIndex === quotes.length - 1) {
-      console.log("All emails have been sent!");
-      clearInterval(interval); // Clear the interval after sending all emails
-    }
 
     arrayIndex += 1;
+
+    // Set the timeout for sending the next email
+    setTimeout(sendEmail, 10 * 1000); // Sends the next email after 10 seconds
   };
 
-  // Set interval to send one email every 10 seconds
-  const interval = setInterval(async () => {
-    await sendEmail();
-  }, 10 * 1000);
+  // Start sending emails
+  sendEmail();
 
   // Response for the GET request
   return new Response(
@@ -89,4 +87,3 @@ export async function GET(req) {
     { status: 200, headers: { "Content-Type": "application/json" } }
   );
 }
-

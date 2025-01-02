@@ -7,6 +7,8 @@ import quotes from "../../../thejsons/list";
 //   return NextResponse.json({ ok: true });
 // }
 
+export const dynamic = 'force-dynamic'; 
+
 export async function POST(req) {
   const d = new Date();
   const month = d.getMonth();

@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 import quotes from "../../../thejsons/list";
 
-// import { NextResponse } from 'next/server';
+// export { NextResponse } from 'next/server';
 
 // export async function GET() {
 //   return NextResponse.json({ ok: true });
@@ -9,50 +9,55 @@ import quotes from "../../../thejsons/list";
 
 export const dynamic = 'force-dynamic'; 
 
+console.log(quotes);
+
 export async function POST(req) {
   const d = new Date();
-  const month = d.getMonth();
+  const month = d.getMonth() + 1; // Month is 0-indexed in JS
   const days = d.getDate();
   const year = d.getFullYear();
   const hour = d.getHours();
   const minutes = d.getMinutes();
   const seconds = d.getSeconds();
 
-  var timesRun = 0;
-  var arrayIndex = 0;
+  let timesRun = 0;
+  let arrayIndex = 0;
 
   console.log(
     `We are moving on ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`
   );
 
-  setInterval(async function () {
-    const currentQuote = quotes[arrayIndex++];
+  // Create a transporter once, outside the loop
+  const transporter = nodemailer.createTransport({
+    service: "Outlook365",
+    auth: {
+      user: process.env.EMAIL2,
+      pass: process.env.EPASSWORD2,
+    },
+    tls: {
+      rejectUnauthorized: false, // Allow self-signed certificates (development only)
+    },
+  });
+
+  // Verify the connection before starting the interval
+  await new Promise((resolve, reject) => {
+    transporter.verify(function (error, success) {
+      if (error) {
+        console.log(error);
+        reject(error);
+      } else {
+        console.log("Server is ready to take our messages");
+        resolve(success);
+      }
+    });
+  });
+
+  const sendEmail = async () => {
+    const currentQuote = quotes[arrayIndex];
     
-     const  email = currentQuote.email;
-     const  id = currentQuote.id;
-     const campId = "090324";
-
-
-    nodemailer.createTransport({
-      service: "Outlook365",
-      auth: {
-        user: process.env.EMAIL2,
-        pass: process.env.EPASSWORD2,
-      },
-    });
-
-    await new Promise((resolve, reject) => {
-      // verify connection configuration
-      transporter.verify(function (error, success) {
-        if (error) {
-          console.log(error);
-          reject(error);
-        } else {
-          console.log("Server is ready to take our messages");
-          resolve(success);
-        }
-      });
-    });
+    const email = currentQuote.email;
+    const id = currentQuote.id;
+    const campId = "090324"; // This seems unused, you can remove if not needed.
 
     const mailData = {
       from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
@@ -61,30 +66,29 @@ export async function POST(req) {
       text: ``,
       html: `Testing it baby.`,
     };
-    await new Promise((resolve, reject) => {
-      transporter.sendMail(mailData, function (err, info) {
-        if (err) {
-          console.log(err);
-          reject(err);
-        } else {
-          console.log("email sent");
-          resolve(info);
-        }
-      });
-    });
 
-    timesRun += 1;
-    console.log(
-      `we ran ${timesRun} times at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`
-    );
+    try {
+      await transporter.sendMail(mailData);
+      console.log("Email sent to: " + email);
+      timesRun += 1;
+    } catch (err) {
+      console.log("Error sending email:", err);
+    }
+
+    console.log(`We ran ${timesRun} times at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`);
     console.log(arrayIndex, quotes.length);
 
-    if (arrayIndex === 2) {
-      console.log("We are done!");
-
-      clearInterval(myIntervals);
-      arrayIndex = 0;
+    // If all emails are sent, clear the interval and reset index
+    if (arrayIndex === quotes.length - 1) {
+      console.log("All emails have been sent!");
+      clearInterval(interval); // Clear the interval after sending all emails
     }
-  }, 10 * 1000);
-  return Response.json({ message: "Emails sent!" });
+
+    arrayIndex += 1;
+  };
+
+  // Set interval to send one email every 10 seconds
+  const interval = setInterval(sendEmail, 10 * 1000);
+
+  return Response.json({ message: "Emails are being sent!" });
 }

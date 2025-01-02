@@ -79,7 +79,9 @@ export async function GET(req) {
   };
 
   // Set interval to send one email every 10 seconds
-  const interval = setInterval(sendEmail, 10 * 1000);
+  const interval = setInterval(async () => {
+    await sendEmail();
+  }, 10 * 1000);
 
   // Response for the GET request
   return new Response(

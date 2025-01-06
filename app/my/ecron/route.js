@@ -44,6 +44,7 @@ export async function GET(req) {
   const sendEmail = async (index) => {
     if (index >= quotes.length) {
       console.log("All emails have been sent!");
+      clearInterval(intervalId); // Stop the interval once all emails have been sent
       return;
     }
 
@@ -67,13 +68,21 @@ export async function GET(req) {
     }
 
     console.log(`Sent email #${index + 1} at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`);
-
-    // Send the next email after a delay
-    setTimeout(() => sendEmail(index + 1), 10 * 1000); // Sends the next email after 10 seconds
   };
 
-  // Start sending emails
-  await sendEmail(0); // Start with the first email
+  let index = 0;
+  // Use setInterval to send emails at 10 second intervals
+  const intervalId = setInterval(() => {
+    sendEmail(index);
+    index++; // Increment the index for the next email
+    if (arrayIndex === quotes.lenght) {
+      console.log("We are done!");
+
+      clearInterval(intervalId);
+      arrayIndex = 0;
+    }
+
+  }, 10 * 1000); // Interval set to 10 seconds
 
   // Response for the GET request
   return new Response(
@@ -81,3 +90,4 @@ export async function GET(req) {
     { status: 200, headers: { "Content-Type": "application/json" } }
   );
 }
+

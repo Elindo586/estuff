@@ -1,6 +1,6 @@
 {
     "crons": [{
       "path": "/my/ecron",
-      "schedule": "45 19 * * *"
+      "schedule": "50 19 * * *"
     }]
   }

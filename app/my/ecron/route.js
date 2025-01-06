@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 console.log(quotes);
 
-export async function POST (req) {
+export async function GET (req) {
   const d = new Date();
   const month = d.getMonth() + 1; // Month is 0-indexed in JS
   const days = d.getDate();

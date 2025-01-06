@@ -15,6 +15,8 @@ export async function GET (req) {
   const minutes = d.getMinutes();
   const seconds = d.getSeconds();
 
+  let timesRun = 0;
+
 
 
   console.log(
@@ -52,6 +54,7 @@ export async function GET (req) {
     const currentQuote = quotes[index];
     const email = currentQuote.email;
     const id = currentQuote.id;
+    timesRun += 1;
 
     const mailData = {
       from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
@@ -64,7 +67,6 @@ export async function GET (req) {
     try {
       await transporter.sendMail(mailData);
       console.log("Email sent to: " + email);
-      timesRun += 1;
     } catch (err) {
       console.log("Error sending email:", err);
     }

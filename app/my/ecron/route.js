@@ -15,8 +15,7 @@ export async function GET (req) {
   const minutes = d.getMinutes();
   const seconds = d.getSeconds();
 
-  let timesRun = 0;
-  let arrayIndex = 0;
+
 
   console.log(
     `We are moving on ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`
@@ -44,13 +43,13 @@ export async function GET (req) {
     });
   });
 
-  const sendEmail = async () => {
-    if (arrayIndex >= quotes.length) {
+  const sendEmail = async (index) => {
+    if (index >= quotes.length) {
       console.log("All emails have been sent!");
       return;
     }
 
-    const currentQuote = quotes[arrayIndex];
+    const currentQuote = quotes[index];
     const email = currentQuote.email;
     const id = currentQuote.id;
 
@@ -72,14 +71,14 @@ export async function GET (req) {
 
     console.log(`We ran ${timesRun} times at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`);
 
-    arrayIndex += 1;
+   
 
-    // Set the timeout for sending the next email
-    setTimeout(sendEmail, 10 * 1000); // Sends the next email after 10 seconds
+   // Send the next email after a delay
+   setTimeout(() => sendEmail(index + 1), 10 * 1000); // Sends the next email after 10 seconds
   };
 
   // Start sending emails
-  await sendEmail();
+  await sendEmail(0);
 
   // Response for the GET request
   return new Response(

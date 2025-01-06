@@ -6,7 +6,7 @@ export const dynamic = 'force-dynamic';
 
 console.log(quotes);
 
-export async function GET (req) {
+export async function GET(req) {
   const d = new Date();
   const month = d.getMonth() + 1; // Month is 0-indexed in JS
   const days = d.getDate();
@@ -14,10 +14,6 @@ export async function GET (req) {
   const hour = d.getHours();
   const minutes = d.getMinutes();
   const seconds = d.getSeconds();
-
-  let timesRun = 0;
-
-
 
   console.log(
     `We are moving on ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`
@@ -54,7 +50,6 @@ export async function GET (req) {
     const currentQuote = quotes[index];
     const email = currentQuote.email;
     const id = currentQuote.id;
-    timesRun += 1;
 
     const mailData = {
       from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
@@ -71,16 +66,14 @@ export async function GET (req) {
       console.log("Error sending email:", err);
     }
 
-    console.log(`We ran ${timesRun} times at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`);
+    console.log(`Sent email #${index + 1} at ${month}/${days}/${year} at ${hour}:${minutes}:${seconds}s`);
 
-   
-
-   // Send the next email after a delay
-   setTimeout(() => sendEmail(index + 1), 10 * 1000); // Sends the next email after 10 seconds
+    // Send the next email after a delay
+    setTimeout(() => sendEmail(index + 1), 10 * 1000); // Sends the next email after 10 seconds
   };
 
   // Start sending emails
-  await sendEmail(0);
+  await sendEmail(0); // Start with the first email
 
   // Response for the GET request
   return new Response(

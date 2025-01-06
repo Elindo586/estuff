@@ -79,7 +79,7 @@ export async function GET(req) {
   };
 
   // Start sending emails
-  sendEmail();
+  await sendEmail();
 
   // Response for the GET request
   return new Response(

@@ -74,7 +74,7 @@ export async function GET(req) {
     await sendEmail(index);  // Send email at index
     if (index < quotes.length - 1) {
       // Wait for 10 seconds before sending the next email
-      await new Promise((resolve) => setTimeout(resolve, 10 * 1000));
+      await new Promise((resolve) => setTimeout(resolve, 120 * 1000));
     }
   }
 

@@ -1,36 +1,18 @@
 [
   {
-    "id": 632,
-    "Contact": "CESAR AUGUSTO",
-    "Email": "info@tu.biz",
-    "quote": [
-      {
-        "Status": "Quoted",
-        "QuoteN": 10016303,
-        "ItemCode": "WF254964",
-        "ItemName": "2520V(Q) SHAFT #1 KEYED",
-        "Qty": 1,
-        "Price": 53,
-        "ExtPrice": 53,
-        "LeadTime": 195
-      }
-    ]
+    "id": 1,
+    "name": "Edgar ",
+    "lastName": "Lindo",
+    "email": "elindo586@gmail.com",
+    "country": "USA",
+    "status": "yes"
   },
   {
-    "id": 633,
-    "Contact": "CESAR AUGUSTO",
-    "Email": "info@tu.biz",
-    "quote": [
-      {
-        "Status": "Quoted",
-        "QuoteN": 10016303,
-        "ItemCode": "WF254964",
-        "ItemName": "2520V(Q) SHAFT #1 KEYED",
-        "Qty": 1,
-        "Price": 53,
-        "ExtPrice": 53,
-        "LeadTime": 195
-      }
-    ]
+    "id": 2,
+    "name": "John",
+    "lastName": "Doe",
+    "email": "elindo586@gmail.com",
+    "country": "USA",
+    "status": "no"
   }
 ]

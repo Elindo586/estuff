@@ -35,7 +35,7 @@ export async function POST(req) {
   const contents = textArray
     .map(
       ({ QuoteN, ItemCode, ItemName, Qty, Price, ExtPrice, LeadTime }) =>
-        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Description: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}
+        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Description: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}\n \n
     `
     )
     .join("\n");

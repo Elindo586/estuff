@@ -1,5 +1,5 @@
 import nodemailer from "nodemailer";
-import quotes from "../../../thejsons/list";
+import quotes from "../../../thejsons/test-emails";
 
 // Exporting a handler for the GET request
 export const dynamic = 'force-dynamic';

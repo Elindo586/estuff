@@ -72,36 +72,34 @@ export async function POST(req) {
       style="background-color: whitesmoke; padding: 20px; margin-top: 2px"
     >
       <tr>
-        <td align="center">
+        <td align="left">
           <!-- Main Container -->
 
           <table
             width="99%"
             cellspacing="0"
             cellpadding="0"
-            style="
-              background-color: whitesmoke;
-              padding: 10px;
-              margin-top: 2px;
-              margin-right: auto;
-              margin-left: auto;
-            "
+            style="background-color: whitesmoke; padding: 10px; margin-top: 2px"
           >
-            <tr>
-              <td>
-                <p>${nameFirst},</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>Todo bien con su cotización? Necesita algo más?</p>
-              </td>
-            </tr>
-            <tr>
-              <td>
-                <p>${contents}</p>
-              </td>
-            </tr>
+            <table>
+              <tr>
+                <td>
+                  <p>${nameFirst},</p>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <p>Todo bien con su cotización? Necesita algo más?</p>
+                </td>
+              </tr>
+            </table>
+
+            <table>
+              
+                  ${contents}
+                
+            </table>
+
             <tr>
               <td>
                 <p>
@@ -115,8 +113,8 @@ export async function POST(req) {
               <td>
                 <p>
                   Productos
-                  <span style="background-color: #ffff00"> Guias Lineales </span
-                  >:
+                  <span style="background-color: #ffff00"> Guias Lineales </span>
+                  :
                   <a
                     href="https://email.tu.biz/my/email-follow/${email}/${campId}/won-linear "
                   >
@@ -136,9 +134,7 @@ export async function POST(req) {
 
             <tr>
               <td>
-                <!-- <p>
-                    Productos para<span style="background-color: #FFFF00"> Controladores y Drives
-                </p> -->
+                <p> Productos de <span style="background-color: #ffff00 ">control electro-mecánico</span>: </p>
                 <p>
                   <a
                     href="https://email.tu.biz/my/email-follow/${email}/${campId}/iss-applications "
@@ -150,7 +146,7 @@ export async function POST(req) {
                   <a
                     href="https://email.tu.biz/my/email-follow/${email}/${campId}/iss-products "
                   >
-                    Productos de control.
+                    Productos para servo control.
                   </a>
                 </p>
                 <p>

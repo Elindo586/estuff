@@ -78,6 +78,42 @@ export default function Page() {
           sizes="100vw"
         />
       </div>
+      <div className={styles.wrap}>
+        <Image
+          fill={true}
+          src="/images/social-icons/whatsapp.png"
+          alt="youtube icon"
+          title="youtube link"
+          id="imageId"
+          // width={24}
+          // height={24}
+          sizes="100vw"
+        />
+      </div>
+      <div className={styles.wrap}>
+        <Image
+          fill={true}
+          src="/images/social-icons/email.png"
+          alt="youtube icon"
+          title="youtube link"
+          id="imageId"
+          // width={24}
+          // height={24}
+          sizes="100vw"
+        />
+      </div>
+      <div className={styles.wrap}>
+        <Image
+          fill={true}
+          src="/images/social-icons/telegram.png"
+          alt="youtube icon"
+          title="youtube link"
+          id="imageId"
+          // width={24}
+          // height={24}
+          sizes="100vw"
+        />
+      </div>
       <div className={styles.wrapA10v}>
         <Image
           fill={true}

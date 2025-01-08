@@ -28,7 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
-  const campId = "q10-30-24";
+  const campId = "q1-8-25";
   // const img = body.img;
 
   const textArray = quote;
@@ -42,9 +42,6 @@ export async function POST(req) {
     )
     .join("\n");
 
-  // const text = `Hola ${nameFirst},\n\nTodo bien con su cotizacion? Necesita algo mas? \n \n${contents} \n \nSaludos, \n \nEdgar \n`;
-
-  // console.log(text);
 
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
@@ -52,7 +49,7 @@ export async function POST(req) {
     subject: `cotizaciones para ${nameFull} | ${title}`,
     text: ``,
     html: `
-    <head>
+     <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Email</title>
@@ -95,25 +92,42 @@ export async function POST(req) {
             </table>
 
             <table>
-              
-                  ${contents}
-                
+              ${contents}
             </table>
 
             <tr>
               <td>
                 <p>
                   Por aparte le comento que tengo muchos otros productos
-                  disponibles, incluyendo Guías Lineales, Controladores y
-                  Drives.
+                  disponibles, incluyendo productos hidráulicos, Guías Lineales,
+                  Controladores y Drives.
                 </p>
               </td>
             </tr>
             <tr>
               <td>
                 <p>
+                  En
+                  <span style="background-color: #ffff00"
+                    >productos hidráulicos
+                  </span>
+                  usted puede ver nuestro
+                  <a
+                    href="https://email.tu.biz/my/email-follow/${email}/${campId}/fluidyne"
+                    >catálogo de hidraulica</a
+                  >
+                  en este link.
+                </p>
+                <p> incluyendo productos de motores hidráulicos, bombas de pistones, paletas, engranes, válvulas direccionales, válvulas de presión, etc.</p>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <p>
                   Productos
-                  <span style="background-color: #ffff00"> Guias Lineales </span>
+                  <span style="background-color: #ffff00">
+                    Guias Lineales
+                  </span>
                   :
                   <a
                     href="https://email.tu.biz/my/email-follow/${email}/${campId}/won-linear "
@@ -134,7 +148,12 @@ export async function POST(req) {
 
             <tr>
               <td>
-                <p> Productos de <span style="background-color: #ffff00 ">control electro-mecánico</span>: </p>
+                <p>
+                  Productos de
+                  <span style="background-color: #ffff00"
+                    >control electro-mecánico</span
+                  >:
+                </p>
                 <p>
                   <a
                     href="https://email.tu.biz/my/email-follow/${email}/${campId}/iss-applications "
@@ -160,9 +179,25 @@ export async function POST(req) {
                 <p>Saludos,</p>
                 <p>Edgar Lindo</p>
                 <p>
-                  <a style=" text-decoration: none; color: rgb(29, 72, 119)" href="https://wa.me/15866125270">WhatsApp</a> |
-                  <a style=" text-decoration: none; color: rgb(29, 72, 119)" href="mailto:info@tu.biz"> Email</a> |
-                  <a style=" text-decoration: none; color: rgb(29, 72, 119)" href="https://t.me/elindo586"> Telegram</a>
+                  <a
+                    style="text-decoration: none; color: rgb(29, 72, 119)"
+                    href="https://wa.me/15866125270"
+                    >WhatsApp</a
+                  >
+                  |
+                  <a
+                    style="text-decoration: none; color: rgb(29, 72, 119)"
+                    href="mailto:info@tu.biz"
+                  >
+                    Email</a
+                  >
+                  |
+                  <a
+                    style="text-decoration: none; color: rgb(29, 72, 119)"
+                    href="https://t.me/elindo586"
+                  >
+                    Telegram</a
+                  >
                 </p>
               </td>
             </tr>
@@ -174,7 +209,6 @@ export async function POST(req) {
       </tr>
     </table>
   </body>
-   
     `,
     // dsn: {
     //   id: `${nameFull} | ${title}`,

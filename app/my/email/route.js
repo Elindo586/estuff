@@ -34,9 +34,11 @@ export async function POST(req) {
   const textArray = quote;
   const contents = textArray
     .map(
-      ({ QuoteN, ItemCode, ItemName, Qty, Price, ExtPrice, LeadTime }) =>
-        `Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Description: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}\n \n
-    `
+      ({ QuoteN, ItemCode, ItemName, Qty, Price, ExtPrice, LeadTime }) => `<tr><td><p>
+         Quote Number: ${QuoteN} \nQyt ${Qty}, Part: ${ItemCode}, Description: ${ItemName}, Price: ${Price}, Ext Price: ${ExtPrice}, Lead Time: ${LeadTime}\n \n
+    
+        </p></td></tr>`
+       
     )
     .join("\n");
 

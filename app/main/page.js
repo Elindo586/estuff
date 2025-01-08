@@ -2,7 +2,7 @@
 
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import quotes from "../../thejsons/1-7-25Quotes02.json";
+import quotes from "../../thejsons/1-7-25-Quotes02.json";
 
 export default function Page() {
   const handleSubmit = () => {

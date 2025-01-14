@@ -7,6 +7,16 @@
     "quote": [
       {
         "Status": "Quoted",
+        "QuoteN": 1001467322,
+        "ItemCode": "WF254848",
+        "ItemName": "2520V/Q SHAFT #11 SPLINED",
+        "Qty": 1,
+        "Price": "$55.00",
+        "ExtPrice": "$55.00",
+        "LeadTime": "STOCK BY 3PM EST"
+      },
+      {
+        "Status": "Quoted",
         "QuoteN": 10014673,
         "ItemCode": "WF254848",
         "ItemName": "2520V/Q SHAFT #11 SPLINED",

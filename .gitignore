@@ -38,3 +38,4 @@ next-env.d.ts
 #some json
 thejsons/test-emails.json
 thejsons/test-quote-new.json
+vercel.json

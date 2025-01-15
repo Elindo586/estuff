@@ -156,14 +156,14 @@ export async function POST(req) {
                 </p>
                 <p>
                   <a
-                    href="https://email.tu.biz/my/email-follow/${email}/${campId}/iss-applications "
+                    href="https://email.tu.biz/my/email-follow/${email}/${campId}/iis-applications "
                   >
                     Aplicaciones electro-mecánicas
                   </a>
                 </p>
                 <p>
                   <a
-                    href="https://email.tu.biz/my/email-follow/${email}/${campId}/iss-products "
+                    href="https://email.tu.biz/my/email-follow/${email}/${campId}/iis-products "
                   >
                     Productos para servo control.
                   </a>

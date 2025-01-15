@@ -197,7 +197,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/vq-pump/${email}/${campId}"
+                  href="https://email.tu.biz/my/image/${email}/${campId}/vq-pump"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fvq-pump.png&w=1920&q=75"
@@ -250,7 +250,7 @@ export async function POST(req) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/vq-pump/${email}/${campId}"
+                          href="https://email.tu.biz/my/image/${email}/${campId}/vq-pump"
                           style="
                             display: inline-block;
                             color: white;
@@ -333,7 +333,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
+                  href="https://email.tu.biz/my/image/${email}/${campId}/linearguides"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
@@ -389,7 +389,7 @@ export async function POST(req) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
+                          href="https://email.tu.biz/my/image/${email}/${campId}/linearguides"
                           style="
                             display: inline-block;
                             color: white;
@@ -474,7 +474,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/controller/${email}/${campId}"
+                  href="https://email.tu.biz/my/image/${email}/${campId}/controller"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcontroller.png&w=1920&q=75"
@@ -524,7 +524,7 @@ export async function POST(req) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/controller/${email}/${campId}"
+                          href="https://email.tu.biz/my/image/${email}/${campId}/controller"
                           style="
                             display: inline-block;
                             color: white;
@@ -737,6 +737,7 @@ export async function POST(req) {
     </table>
   </body>
 </html>
+
 
     `,
     // dsn: {

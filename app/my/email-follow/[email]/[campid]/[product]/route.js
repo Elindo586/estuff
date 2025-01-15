@@ -31,7 +31,7 @@ export async function GET(request, { params }) {
     case "won-linear":
       redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
       break;
-    case "iss-applications":
+    case "iis-applications":
       redirectUrl.href = "https://www.iis-servo.com/industries/";
       break;
   }

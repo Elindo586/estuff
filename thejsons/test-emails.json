@@ -3,7 +3,7 @@
     "id": 1,
     "name": "Edgar ",
     "lastName": "Lindo",
-    "email": "elindo586@gmail.com",
+    "email": "info@tu.biz",
     "country": "USA",
     "status": "yes"
   },
@@ -11,7 +11,7 @@
     "id": 2,
     "name": "John",
     "lastName": "Doe",
-    "email": "elindo586@gmail.com",
+    "email": "info@tu.biz",
     "country": "USA",
     "status": "no"
   }

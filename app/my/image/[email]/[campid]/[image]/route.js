@@ -6,15 +6,17 @@ export async function GET(request, { params }) {
   const campId = params.campid;
   const image = params.image;
 
-  const d = new Date();
-  const month = d.getMonth()+ 1;
-  const days = d.getDate();
-  const year = d.getFullYear();
-  const hour = d.getHours();
-  const minutes = d.getMinutes();
-  const seconds = d.getSeconds();
+  // const d = new Date();
+  // const month = d.getMonth()+ 1;
+  // const days = d.getDate();
+  // const year = d.getFullYear();
+  // const hour = d.getHours();
+  // const minutes = d.getMinutes();
+  // const seconds = d.getSeconds();
 
-  const date = ` ${year}/${month}/${days} at ${hour}:${minutes}:${seconds}s`;
+  // const date = ` ${year}/${month}/${days} at ${hour}:${minutes}:${seconds}s`;
+
+  const date = d.toISOString();
 
   await sql`INSERT INTO image (image, email, campid, date) VALUES ( ${image}, ${userEmail}, ${campId}, ${date});`;
 

@@ -20,7 +20,7 @@ export async function GET(request, { params }) {
 
   
   const redirectUrl = new URL(
-    "https://www.iis-servo.com/products/",
+    "https://tu.biz",
     request.url
   );
 
@@ -31,9 +31,20 @@ export async function GET(request, { params }) {
     case "won-linear":
       redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
       break;
+      case "linearguides":
+      redirectUrl.href = "https://www.tu.biz/products/mechanical/linear-bearings";
+      break;
     case "iis-applications":
       redirectUrl.href = "https://www.iis-servo.com/industries/";
       break;
+      
+      case "controller":
+      redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
+      break;
+      case "vq-pump":
+      redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
+      break;
   }
+
   return NextResponse.redirect(redirectUrl);
 }

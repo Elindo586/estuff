@@ -37,7 +37,7 @@ export async function GET(request, { params }) {
       case "linearguides":
       redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
       break;
-      case "vq-pumps":
+      case "vq-pump":
       redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
       break;
       case "controller":

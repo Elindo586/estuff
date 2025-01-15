@@ -7,13 +7,11 @@ export async function POST(req) {
       user: process.env.EMAIL2,
       pass: process.env.EPASSWORD2,
     },
-    // secure: true,
+    secure: true,
     
     // tls: {
     //   rejectUnauthorized: false, // Allow self-signed certificates (development only)
-    //   // ca: fs.readFileSync('path/to/your/self-signed-cert.pem'),  
-    //   // since I don't have a file I copy and post it the SSL code given by Vercel.
-    //   // ca: process.env.SSLCERTIFICATE,
+      
     // },
   });
 

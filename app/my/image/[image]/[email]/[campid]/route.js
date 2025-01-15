@@ -8,7 +8,7 @@ export async function GET(request, { params }) {
   const campId = params.campid;
 
   const d = new Date();
-  const month = d.getMonth();
+  const month = d.getMonth() + 1;
   const days = d.getDate();
   const year = d.getFullYear();
   const hour = d.getHours();
@@ -37,7 +37,22 @@ export async function GET(request, { params }) {
     case "controller":
       redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
       break;
+      case "fluidyne":
+      redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx ";
+      break;
+    case "won-linear":
+      redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
+      break;
+    case "iss-applications":
+      redirectUrl.href = "https://www.iis-servo.com/industries/";
+      break;
+      case "linearguides":
+        redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
+        break;
   }
+
+ 
+  
   return NextResponse.redirect(redirectUrl);
 
 }

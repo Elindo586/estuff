@@ -5,7 +5,7 @@ export async function GET(request, { params }) {
   const campId = params.campid;
 
   const d = new Date();
-  const month = d.getMonth();
+  const month = d.getMonth() + 1;
   const days = d.getDate();
   const year = d.getFullYear();
   const hour = d.getHours();

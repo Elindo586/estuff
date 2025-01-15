@@ -36,7 +36,7 @@ export async function POST(req) {
   const title = body.id;
   const campId = "090324";
 
-  const d = new Date();
+  const d = new Date() + 1;
   const year = d.getFullYear();
 
   const mailData = {
@@ -124,7 +124,7 @@ export async function POST(req) {
             >
             para ver el email en página web.
           </p>
-         
+          <!-- <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p> -->
         </td>
       </tr>
       <tr>
@@ -188,7 +188,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Bombas de pistones</b></p>
+                <p style="color: #3a6b83"><b> Bombas de paletas y repuestos</b></p>
               </td>
             </tr>
             <tr>
@@ -197,10 +197,10 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                  href="https://email.tu.biz/my/image/vq-pump/${email}/${campId}"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Frexrothpump-5.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fvq-pump.png&w=1920&q=75"
                     alt="Rexroth pump replacement"
                     style="
                       max-width: 100%;
@@ -221,18 +221,17 @@ export async function POST(req) {
                 "
               >
                 <p style="color: #3a6b83">
-                  Tenemos bombas de reemplazo para <b>Rexroth</b> serie A10V.
+                  Tenemos bombas de reemplazo directo para <b>Vickers</b>.
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Repuestos</b>: grupos rotatorios, kit de sellos, kit de
-                  rodamientos.
+                  <b>Repuestos</b>: cart kits y kit de sellos.
                 </p>
                 <p style="color: #3a6b83">
-                  Bombas completas desde 18cc hasta 140cc.
+                  También manejamos respuestos directos con <b>Parker/Denison</b>.
                 </p>
                 <br />
                 <p style="color: #3a6b83">
-                  Intercambios directos todo en <b>STOCK</b>
+                  Todo en <b>STOCK</b>
                 </p>
 
                 <!-- Button links -->
@@ -251,7 +250,7 @@ export async function POST(req) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                          href="https://email.tu.biz/my/image/vq-pump/${email}/${campId}"
                           style="
                             display: inline-block;
                             color: white;
@@ -476,7 +475,6 @@ export async function POST(req) {
               >
                 <a
                   href="https://email.tu.biz/my/image/controller/${email}/${campId}"
-                      
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcontroller.png&w=1920&q=75"
@@ -527,7 +525,6 @@ export async function POST(req) {
                       <p style="margin: 0.5em">
                         <a
                           href="https://email.tu.biz/my/image/controller/${email}/${campId}"
-                                
                           style="
                             display: inline-block;
                             color: white;
@@ -633,17 +630,17 @@ export async function POST(req) {
             "
           >
             <tr>
-              <td colspan="6">
-                <p style="color: grey; margin-bottom: 0.5em">Redes Sociales</p>
+              <td colspan="3">
+                <p style="color: grey; margin-bottom: 0.5em">Contacto</p>
               </td>
             </tr>
             <tr>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/social/linkedin/${email}/${campId}"
+                  href="https://wa.me/15866125270"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fwhatsapp.png&w=1920&q=75"
                     alt="LinkedIn"
                     style="
                       max-width: 100%;
@@ -653,14 +650,16 @@ export async function POST(req) {
                       margin: 0 auto;
                     "
                   />
+                  
                 </a>
+                <p style="color: grey; margin-bottom: 0.5em">WhatsApp</p>
               </td>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/social/youtube/${email}/${campId}"
+                  href="mailto:info@tu.biz"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Femail.png&w=1920&q=75"
                     alt="YouTube"
                     style="
                       max-width: 100%;
@@ -668,15 +667,16 @@ export async function POST(req) {
                       margin-left: auto;
                       margin-right: auto;
                     "
-                  />
+                  /> 
                 </a>
+                <p style="color: grey; margin-bottom: 0.5em">Email</p>
               </td>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/social/snapchat/${email}/${campId}"
+                  href="https://t.me/elindo586"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftelegram.png&w=1920&q=75"
                     alt="Snapchat"
                     style="
                       max-width: 100%;
@@ -685,56 +685,12 @@ export async function POST(req) {
                       margin-right: auto;
                     "
                   />
-                </a>
+                </a> 
+                <p style="color: grey; margin-bottom: 0.5em">Telegram</p>
               </td>
-              <td style="text-align: center">
-                <a
-                  href="https://email.tu.biz/my/social/instagram/${email}/${campId}"
-                >
-                  <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
-                    alt="Instagram"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                  />
-                </a>
-              </td>
-              <td style="text-align: center">
-                <a
-                  href="https://email.tu.biz/my/social/tiktok/${email}/${campId}"
-                >
-                  <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
-                    alt="TikTok"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                  />
-                </a>
-              </td>
-              <td style="text-align: center">
-                <a
-                  href="https://email.tu.biz/my/social/facebook/${email}/${campId}"
-                >
-                  <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
-                    alt="Facebook"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                  />
-                </a>
-              </td>
+              
+              
+              
             </tr>
           </table>
 

@@ -7,7 +7,7 @@ export async function GET(_, { params }) {
   const title = params.title;
 
   const d = new Date();
-  const month = d.getMonth();
+  const month = d.getMonth() + 1;
   const days = d.getDate();
   const year = d.getFullYear();
   const hour = d.getHours();
@@ -91,14 +91,14 @@ export async function GET(_, { params }) {
     >
       <tr>
         <td style="text-align: center">
-          <p style="margin-bottom: 0.1em; margin-top: 0.1em">
+          <p style="margin-bottom: 0.2em; margin-top: 0.1em">
             Si no puede ver imágenes, haga
             <a href="https://email.tu.biz/my/ehost/${email}/${campId}/${title}"
               >clic aquí</a
             >
             para ver el email en página web.
           </p>
-          <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p>
+          <!-- <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p> -->
         </td>
       </tr>
       <tr>
@@ -162,7 +162,7 @@ export async function GET(_, { params }) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Bombas de pistones</b></p>
+                <p style="color: #3a6b83"><b> Bombas de paletas y repuestos</b></p>
               </td>
             </tr>
             <tr>
@@ -171,10 +171,10 @@ export async function GET(_, { params }) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/vq-pump"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Frexrothpump-5.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fvq-pump.png&w=1920&q=75"
                     alt="Rexroth pump replacement"
                     style="
                       max-width: 100%;
@@ -195,18 +195,17 @@ export async function GET(_, { params }) {
                 "
               >
                 <p style="color: #3a6b83">
-                  Tenemos bombas de reemplazo para <b>Rexroth</b> serie A10V.
+                  Tenemos bombas de reemplazo directo para <b>Vickers</b>.
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Repuestos</b>: grupos rotatorios, kit de sellos, kit de
-                  rodamientos.
+                  <b>Repuestos</b>: cart kits y kit de sellos.
                 </p>
                 <p style="color: #3a6b83">
-                  Bombas completas desde 18cc hasta 140cc.
+                  También manejamos respuestos directos con <b>Parker/Denison</b>.
                 </p>
                 <br />
                 <p style="color: #3a6b83">
-                  Intercambios directos todo en <b>STOCK</b>
+                  Todo en <b>STOCK</b>
                 </p>
 
                 <!-- Button links -->
@@ -225,7 +224,7 @@ export async function GET(_, { params }) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/rexrothpump/${email}/${campId}"
+                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/vq-pump"
                           style="
                             display: inline-block;
                             color: white;
@@ -308,7 +307,7 @@ export async function GET(_, { params }) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
+                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/linearguides"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
@@ -364,7 +363,7 @@ export async function GET(_, { params }) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/linearguides/${email}/${campId}"
+                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/linearguides"
                           style="
                             display: inline-block;
                             color: white;
@@ -440,7 +439,7 @@ export async function GET(_, { params }) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Motores de Orbitrol</b></p>
+                <p style="color: #3a6b83"><b> Controladores para Servo Motores</b></p>
               </td>
             </tr>
             <tr>
@@ -449,10 +448,10 @@ export async function GET(_, { params }) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
+                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/controller"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcontroller.png&w=1920&q=75"
                     alt="Motores Orbitales"
                     style="
                       max-width: 100%;
@@ -467,18 +466,20 @@ export async function GET(_, { params }) {
               <td width="50%" style="vertical-align: top; padding-left: 2%">
                 <br />
                 <p style="color: #3a6b83">
-                  Manejamos motores hidráulicos de orbitrol.
+                  Posicionamiento.
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Intercambios</b> directos con <b>Charlynn</b>.
+                indexación.
                 </p>
                 <p style="color: #3a6b83">
-                  También podemos reemplazar casi todas las marcas en el
-                  mercado.
+                    sincronización
                 </p>
-                <br />
+
                 <p style="color: #3a6b83">
-                  Material para entrega <b>rápida</b>.
+                    Aceleración/desaceleración
+                </p> </br>
+                <p style="color: #3a6b83">
+                    Todo para sus aplicaciones de automatizciones para maquinaria
                 </p>
 
                 <!-- Button links -->
@@ -497,7 +498,7 @@ export async function GET(_, { params }) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/image/charlynn/${email}/${campId}"
+                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/controller"
                           style="
                             display: inline-block;
                             color: white;
@@ -603,17 +604,17 @@ export async function GET(_, { params }) {
             "
           >
             <tr>
-              <td colspan="6">
-                <p style="color: grey; margin-bottom: 0.5em">Redes Sociales</p>
+              <td colspan="3">
+                <p style="color: grey; margin-bottom: 0.5em">Contacto</p>
               </td>
             </tr>
             <tr>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/social/linkedin/${email}/${campId}"
+                  href="https://wa.me/15866125270"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Flinkedin24.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fwhatsapp.png&w=1920&q=75"
                     alt="LinkedIn"
                     style="
                       max-width: 100%;
@@ -623,14 +624,16 @@ export async function GET(_, { params }) {
                       margin: 0 auto;
                     "
                   />
+                  
                 </a>
+                <p style="color: grey; margin-bottom: 0.5em">WhatsApp</p>
               </td>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/social/youtube/${email}/${campId}"
+                  href="mailto:info@tu.biz"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fyoutube24.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Femail.png&w=1920&q=75"
                     alt="YouTube"
                     style="
                       max-width: 100%;
@@ -638,15 +641,16 @@ export async function GET(_, { params }) {
                       margin-left: auto;
                       margin-right: auto;
                     "
-                  />
+                  /> 
                 </a>
+                <p style="color: grey; margin-bottom: 0.5em">Email</p>
               </td>
               <td style="text-align: center">
                 <a
-                  href="https://email.tu.biz/my/social/snapchat/${email}/${campId}"
+                  href="https://t.me/elindo586"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Fsnapchat24.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftelegram.png&w=1920&q=75"
                     alt="Snapchat"
                     style="
                       max-width: 100%;
@@ -655,56 +659,12 @@ export async function GET(_, { params }) {
                       margin-right: auto;
                     "
                   />
-                </a>
+                </a> 
+                <p style="color: grey; margin-bottom: 0.5em">Telegram</p>
               </td>
-              <td style="text-align: center">
-                <a
-                  href="https://email.tu.biz/my/social/instagram/${email}/${campId}"
-                >
-                  <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Finstagram24.png&w=1920&q=75"
-                    alt="Instagram"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                  />
-                </a>
-              </td>
-              <td style="text-align: center">
-                <a
-                  href="https://email.tu.biz/my/social/tiktok/${email}/${campId}"
-                >
-                  <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ftiktok24.png&w=1920&q=75"
-                    alt="TikTok"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                  />
-                </a>
-              </td>
-              <td style="text-align: center">
-                <a
-                  href="https://email.tu.biz/my/social/facebook/${email}/${campId}"
-                >
-                  <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fsocial-icons%2Ffacebook24.png&w=1920&q=75"
-                    alt="Facebook"
-                    style="
-                      max-width: 100%;
-                      height: auto;
-                      margin-left: auto;
-                      margin-right: auto;
-                    "
-                  />
-                </a>
-              </td>
+              
+              
+              
             </tr>
           </table>
 
@@ -752,7 +712,6 @@ export async function GET(_, { params }) {
   </body>
 </html>
 
-         
 
   `;
 

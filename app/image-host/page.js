@@ -164,6 +164,19 @@ export default function Page() {
         />
         
       </div>
+      <div className={styles.wrapvq}>
+        <Image
+          fill={true}
+          src="/images/products/vq-pump.png"
+          alt="VQ series pumps"
+          title="VQ series pumps"
+          id="imageId"
+          // width={1062}
+          // height={567}
+          sizes="100vw"
+        />
+        
+      </div>
     </div>
   );
 }

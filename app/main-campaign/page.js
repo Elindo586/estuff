@@ -7,7 +7,7 @@ import quotes from "../../thejsons/test-emails.json";
 export default function Page() {
   const handleSubmit = () => {
     const d = new Date();
-    const month = d.getMonth();
+    const month = d.getMonth() +1;
     const days = d.getDate();
     const year = d.getFullYear();
     const hour = d.getHours();

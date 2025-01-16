@@ -64,7 +64,7 @@ export default function Page() {
       );
       console.log(arrayIndex, quotes.length);
 
-      if (arrayIndex === quotes.lenght) {
+      if (arrayIndex === quotes.length) {
         console.log("We are done!");
 
         clearInterval(myIntervals);

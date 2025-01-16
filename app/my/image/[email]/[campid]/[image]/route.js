@@ -21,31 +21,32 @@ export async function GET(request, { params }) {
  const result= await sql`INSERT INTO image (image, email, campid, date) VALUES ( ${image}, ${userEmail}, ${campId}, ${date});`;
 console.log(result);
   
-  const redirectUrl = new URL(
-    "https://www.tu.biz",
-    request.url
-  );
+  // const redirectUrl = new URL(
+  //   "https://www.tu.biz",
+  //   request.url
+  // );
 
-  switch (image) {
-    case "fluidyne":
-      redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx ";
-      break;
-    case "won-linear":
-      redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
-      break;
-    case "iis-applications":
-      redirectUrl.href = "https://www.iis-servo.com/industries/";
-      break;
-      case "linearguides":
-      redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
-      break;
-      case "vq-pump":
-      redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
-      break;
-      case "controller":
-      redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
-      break;
+  // switch (image) {
+  //   case "fluidyne":
+  //     redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx ";
+  //     break;
+  //   case "won-linear":
+  //     redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
+  //     break;
+  //   case "iis-applications":
+  //     redirectUrl.href = "https://www.iis-servo.com/industries/";
+  //     break;
+  //     case "linearguides":
+  //     redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
+  //     break;
+  //     case "vq-pump":
+  //     redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
+  //     break;
+  //     case "controller":
+  //     redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
+  //     break;
 
-  }
-  return NextResponse.redirect(redirectUrl);
+  // }
+  // return NextResponse.redirect(redirectUrl);
+  return NextResponse.json({ result }, { status: 200 });
 }

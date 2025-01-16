@@ -32,7 +32,7 @@ export async function POST(req) {
 
   const email = body.email;
   const title = body.id;
-  const campId = "1-15-25-c";
+  const campId = "1-16-25-c";
 
   const d = new Date();
   const year = d.getFullYear();

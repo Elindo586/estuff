@@ -18,8 +18,8 @@ export async function GET(request, { params }) {
 
   const date = d.toISOString();
 
-  await sql`INSERT INTO image (image, email, campid, date) VALUES ( ${image}, ${userEmail}, ${campId}, ${date});`;
-
+ const result= await sql`INSERT INTO image (image, email, campid, date) VALUES ( ${image}, ${userEmail}, ${campId}, ${date});`;
+console.log(result);
   
   const redirectUrl = new URL(
     "https://www.tu.biz",

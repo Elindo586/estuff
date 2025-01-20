@@ -7,12 +7,12 @@ export async function POST(req) {
       user: process.env.EMAIL2,
       pass: process.env.EPASSWORD2,
     },
-    secure: true,
+    // secure: true,
     
-    tls: {
-      rejectUnauthorized: false, // Allow self-signed certificates (development only)
+    // tls: {
+    //   rejectUnauthorized: false, // Allow self-signed certificates (development only)
       
-    },
+    // },
   });
 
   await new Promise((resolve, reject) => {
@@ -32,7 +32,7 @@ export async function POST(req) {
 
   const email = body.email;
   const title = body.id;
-  const campId = "1-16-25-c";
+  const campId = "1-20-25-o";
 
   const d = new Date();
   const year = d.getFullYear();

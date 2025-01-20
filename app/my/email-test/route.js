@@ -32,7 +32,7 @@ export async function POST(req) {
 
   const email = body.email;
   const title = body.id;
-  const campId = "1-20-25-o";
+  const campId = "1-20-25-eu";
 
   const d = new Date();
   const year = d.getFullYear();
@@ -186,7 +186,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Bombas de paletas y repuestos</b></p>
+                <p style="color: #3a6b83"><b style=" background-color: yellow;"> Compras de repuestos industriales</b></p>
               </td>
             </tr>
             <tr>
@@ -219,17 +219,17 @@ export async function POST(req) {
                 "
               >
                 <p style="color: #3a6b83">
-                  Tenemos bombas de reemplazo directo para <b>Vickers</b>.
+                 • ¿Necesita repuestos industriales y no tiene proveedor?
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Repuestos</b>: cart kits y kit de sellos.
+                   • Podemos suministrar repuestos desde EE.UU. para sus necesidades en planta.
                 </p>
                 <p style="color: #3a6b83">
-                  También manejamos respuestos directos con <b>Parker/Denison</b>.
+                  • Algunos productos inclyen áreas como hidráulica, eltromécanica, <span style=" background-color: yellow;" >repuestos industriales en general.</span> 
                 </p>
                 <br />
                 <p style="color: #3a6b83">
-                  Todo en <b>STOCK</b>
+                
                 </p>
 
                 <!-- Button links -->
@@ -322,7 +322,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Guías Lineales</b></p>
+                <p style="color: #3a6b83;"><b style = "background-color: yellow;" > Productos Standard</b></p>
               </td>
             </tr>
             <tr>
@@ -463,7 +463,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b> Controladores para Servo Motores</b></p>
+                <p style="color: #3a6b83"><b style = "background-color: yellow;"> Retro-instalación de controladores.</b></p>
               </td>
             </tr>
             <tr>
@@ -489,6 +489,7 @@ export async function POST(req) {
               </td>
               <td width="50%" style="vertical-align: top; padding-left: 2%">
                 <br />
+                <p style="color: #3a6b83"> ¿Tiene controladores viejos sin repuestos existentes? Nosotros podemos instalar controladores nuevos para diferentes operaciones como:</p>
                 <p style="color: #3a6b83">
                   Posicionamiento.
                 </p>
@@ -735,6 +736,7 @@ export async function POST(req) {
     </table>
   </body>
 </html>
+
 
     `,
     // dsn: {

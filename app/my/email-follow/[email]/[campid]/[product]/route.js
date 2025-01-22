@@ -7,7 +7,7 @@ export async function GET(request, { params }) {
   const campId = params.campid;
 
   const d = new Date();
-  const month = d.getMonth()+ 1;
+  const month = d.getMonth() + 1;
   const days = d.getDate();
   const year = d.getFullYear();
   const hour = d.getHours();
@@ -18,11 +18,7 @@ export async function GET(request, { params }) {
 
   await sql`INSERT INTO product (product, email, campId, date) VALUES ( ${product}, ${userEmail}, ${campId}, ${date});`;
 
-  
-  const redirectUrl = new URL(
-    "https://tu.biz",
-    request.url
-  );
+  const redirectUrl = new URL("https://tu.biz", request.url);
 
   switch (product) {
     case "fluidyne":
@@ -31,17 +27,23 @@ export async function GET(request, { params }) {
     case "won-linear":
       redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
       break;
-      case "linearguides":
-      redirectUrl.href = "https://www.tu.biz/products/mechanical/linear-bearings";
+    case "linearguides":
+      redirectUrl.href =
+        "https://www.tu.biz/products/mechanical/linear-bearings";
+      break;
+    case "linearguides-english":
+      redirectUrl.href =
+        "https://www.tu.biz/products/mechanical/linear-bearings";
       break;
     case "iis-applications":
       redirectUrl.href = "https://www.iis-servo.com/industries/";
       break;
-      
-      case "controller":
-      redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
+
+    case "controller":
+      redirectUrl.href =
+        "https://www.iis-servo.com/products/emerald-automation-controller/";
       break;
-      case "vq-pump":
+    case "vq-pump":
       redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
       break;
   }

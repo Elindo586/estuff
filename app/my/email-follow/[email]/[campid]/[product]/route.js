@@ -18,15 +18,25 @@ export async function GET(request, { params }) {
     .toString()
     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
-  // Insert into database with correct parameterized query
-  await sql`
-    INSERT INTO product (product, email, campId, date)
-    VALUES (${product}, ${userEmail}, ${campId}, ${date});
-  `;
+  // Debug: Log parameters to check if data is correct
+  console.log("Inserting data into database:", { product, userEmail, campId, date });
 
+  try {
+    // Insert into the database
+    const result = await sql`
+      INSERT INTO product (product, email, campId, date)
+      VALUES (${product}, ${userEmail}, ${campId}, ${date});
+    `;
+    console.log("Data inserted successfully:", result);
+
+  } catch (error) {
+    console.error("Error inserting data:", error);
+    return NextResponse.error();  // Optional: Return error response if insertion fails
+  }
+
+  // Define the redirect URL based on the product
   const redirectUrl = new URL("https://tu.biz", request.url);
 
-  // Switch case for redirects
   switch (product) {
     case "fluidyne":
       redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx";

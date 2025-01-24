@@ -1,7 +1,11 @@
-import { sql } from "@vercel/postgres";
+// import { sql } from "@vercel/postgres";
+import { neon } from '@neondatabase/serverless';
+
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
+
+  const sql = neon(`${process.env.DATABASE_URL}`);
   const userEmail = params.email;
   const campId = params.campid;
   const image = params.image;

@@ -1,8 +1,11 @@
-import { sql } from "@vercel/postgres";
+// import { sql } from "@vercel/postgres";
+import { neon } from '@neondatabase/serverless';
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
   const { product, email: userEmail, campid: campId } = params;
+
+  const sql = neon(`${process.env.DATABASE_URL}`);
 
   const d = new Date();
   const year = d.getFullYear();
@@ -24,7 +27,7 @@ export async function GET(request, { params }) {
   try {
     // Insert into the database
     const result = await sql`
-      INSERT INTO product (product, email, campId, date)
+      INSERT INTO test (product, email, campId, date)
       VALUES (${product}, ${userEmail}, ${campId}, ${date});
     `;
     console.log("Data inserted successfully:", result);

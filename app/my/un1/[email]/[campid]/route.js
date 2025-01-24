@@ -1,8 +1,13 @@
-import { sql } from "@vercel/postgres";
+// import { sql } from "@vercel/postgres";
+import { neon } from "@neondatabase/serverless";
 
 export async function GET(request, { params }) {
+
+
   const userEmail = params.email;
   const campId = params.campid;
+
+  const sql = neon(`${process.env.DATABASE_URL}`);
 
   const d = new Date();
   const month = d.getMonth() + 1;

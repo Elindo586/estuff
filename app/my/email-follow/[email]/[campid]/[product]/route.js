@@ -1,5 +1,5 @@
 // import { sql } from "@vercel/postgres";
-import { neon } from '@neondatabase/serverless';
+import { neon } from "@neondatabase/serverless";
 import { NextResponse } from "next/server";
 
 export async function GET(request, { params }) {
@@ -22,7 +22,12 @@ export async function GET(request, { params }) {
     .padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`;
 
   // Debug: Log parameters to check if data is correct
-  console.log("Inserting data into database:", { product, userEmail, campId, date });
+  console.log("Inserting data into database:", {
+    product,
+    userEmail,
+    campId,
+    date,
+  });
 
   try {
     // Insert into the database
@@ -31,10 +36,9 @@ export async function GET(request, { params }) {
       VALUES (${product}, ${userEmail}, ${campId}, ${date});
     `;
     console.log("Data inserted successfully:", result);
-
   } catch (error) {
     console.error("Error inserting data:", error);
-    return NextResponse.error();  // Optional: Return error response if insertion fails
+    return NextResponse.error(); // Optional: Return error response if insertion fails
   }
 
   // Define the redirect URL based on the product
@@ -49,13 +53,17 @@ export async function GET(request, { params }) {
       break;
     case "linearguides":
     case "linearguides-english":
-      redirectUrl.href = "https://www.tu.biz/products/mechanical/linear-bearings";
+      redirectUrl.href =
+        "https://www.tu.biz/products/mechanical/linear-bearings";
       break;
     case "iis-applications":
       redirectUrl.href = "https://www.iis-servo.com/industries/";
       break;
+    case "iis-products":
+      redirectUrl.href = "https://www.iis-servo.com/products/";
     case "controller":
-      redirectUrl.href = "https://www.iis-servo.com/products/emerald-automation-controller/";
+      redirectUrl.href =
+        "https://www.iis-servo.com/products/emerald-automation-controller/";
       break;
     case "vq-pump":
       redirectUrl.href = "https://www.tu.biz/products/vane-pumps";

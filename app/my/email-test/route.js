@@ -116,11 +116,11 @@ export async function POST(req) {
       <tr>
         <td style="text-align: center">
           <p style="margin-bottom: 0.2em; margin-top: 0.1em">
-            Si no puede ver imágenes, haga
-            <a href="https://email.tu.biz/my/ehost/${email}/${campId}/${title}"
-              >clic aquí</a
+            If you can't see images,
+            <a href="https://email.tu.biz/my/host1/${email}/${campId}/${title}"
+              >click here</a
             >
-            para ver el email en página web.
+            to view it on the web.
           </p>
           <!-- <p style="margin-bottom: 0; margin-top: 0.1em">${title}</p> -->
         </td>
@@ -147,10 +147,10 @@ export async function POST(req) {
                 <h1 style="margin: 0; color: white">Technical Union</h1>
                 <p style="margin: 0; color: white">by Edgar Lindo</p>
                 <p style="margin-top: 1em; margin-bottom: 0.3em; color: white">
-                  Automatización de Maquinaria
+                  Industrial Automation
                 </p>
                 <p style="color: white; margin: 0">
-                  Hidráulica | Neumática | Eléctrica | Mecánica
+                  Hydraulics | Pneumatics | Electrical | Mechanical
                 </p>
               </td>
             </tr>
@@ -186,7 +186,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b style=" background-color: yellow;"> Compras de repuestos industriales</b></p>
+                <p style="color: #3a6b83"><b style=" background-color: yellow;"> Hydraulic items</b></p>
               </td>
             </tr>
             <tr>
@@ -219,13 +219,13 @@ export async function POST(req) {
                 "
               >
                 <p style="color: #3a6b83">
-                 • ¿Necesita repuestos industriales y no tiene proveedor?
+                 • We provide a full range of vane, piston, gear pumps, pressure and control valves. 
                 </p>
                 <p style="color: #3a6b83">
-                   • Podemos suministrar repuestos desde EE.UU. para sus necesidades en planta.
+                   • We offer spare parts as well as complete units to replace popular hydraulic brand names.
                 </p>
                 <p style="color: #3a6b83">
-                  • Algunos productos inclyen áreas como hidráulica, eltromécanica, <span style=" background-color: yellow;" >repuestos industriales en general.</span> 
+                  • Technical support, competitive pricing, and quick delivery from inventory is standard.  
                 </p>
                 <br />
                 <p style="color: #3a6b83">
@@ -259,7 +259,7 @@ export async function POST(req) {
                             font-size: 15px;
                           "
                         >
-                          Ver más
+                          See more
                         </a>
                       </p>
                     </td>
@@ -322,7 +322,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83;"><b style = "background-color: yellow;" > Productos Standard</b></p>
+                <p style="color: #3a6b83;"><b style = "background-color: yellow;" > Linear Guides</b></p>
               </td>
             </tr>
             <tr>
@@ -331,7 +331,7 @@ export async function POST(req) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/linearguides"
+                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/linearguides-english"
                 >
                   <img
                     src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Flinear-guides263.png&w=1920&q=75"
@@ -355,19 +355,17 @@ export async function POST(req) {
                 "
               >
                 <p style="color: #3a6b83">
-                  Manejamos guías lineales de intercambios con todas marcas.
+                  We handle a large variety to interchange with all brands.
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Repuestos</b>: rieles, bloques, ensambles completos.
+                  <b>Replacements for:</b>: linear guides, blocks, complete assemblies.
                 </p>
                 <p style="color: #3a6b83">
-                  Material de alta calidad, precios competitivos, entrega
-                  rápida.
+                  Hight quality prouducts with competitive prices and fast delivery.
                 </p>
                 <br />
                 <p style="color: #3a6b83; margin-top: 1em">
-                  <b> Soporte</b> técnico y comercial para crecimiento de su
-                  empresa.
+                  <b> Technical Support</b> for all applications.
                 </p>
 
                 <!-- Button links -->
@@ -387,7 +385,7 @@ export async function POST(req) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/linearguides"
+                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/linearguides-english"
                           style="
                             display: inline-block;
                             color: white;
@@ -398,7 +396,7 @@ export async function POST(req) {
                             font-size: 15px;
                           "
                         >
-                          Ver más
+                          See more
                         </a>
                       </p>
                     </td>
@@ -463,7 +461,7 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center" colspan="2">
-                <p style="color: #3a6b83"><b style = "background-color: yellow;"> Retro-instalación de controladores.</b></p>
+                <p style="color: #3a6b83"><b style = "background-color: yellow;"> Controllers for new and existing machines.</b></p>
               </td>
             </tr>
             <tr>
@@ -489,22 +487,22 @@ export async function POST(req) {
               </td>
               <td width="50%" style="vertical-align: top; padding-left: 2%">
                 <br />
-                <p style="color: #3a6b83"> ¿Tiene controladores viejos sin repuestos existentes? Nosotros podemos instalar controladores nuevos para diferentes operaciones como:</p>
+                <p style="color: #3a6b83"> Do you have an old machine with an old controller? We can refrofit your machine's controllers with new alternatives. Applications include:</p>
                 <p style="color: #3a6b83">
-                  Posicionamiento.
+                  Positioning.
                 </p>
                 <p style="color: #3a6b83">
-                indexación.
+                indexation.
                 </p>
                 <p style="color: #3a6b83">
-                    sincronización
+                    syncronization.
                 </p>
 
                 <p style="color: #3a6b83">
-                    Aceleración/desaceleración
+                    Acceleration / Deceleration
                 </p> </br>
                 <p style="color: #3a6b83">
-                    Todo para sus aplicaciones de automatizciones para maquinaria
+                    Complete control solutions for servo-motors.
                 </p>
 
                 <!-- Button links -->
@@ -534,7 +532,7 @@ export async function POST(req) {
                             font-size: 15px;
                           "
                         >
-                          Ver más
+                          See more
                         </a>
                       </p>
                     </td>
@@ -585,14 +583,14 @@ export async function POST(req) {
           >
             <tr>
               <td style="text-align: center">
-                <h1 style="margin: 0; color: white">Industrias</h1>
+                <h1 style="margin: 0; color: white">Industries</h1>
 
                 <p style="color: white; margin: 0">
-                  Metal-mecánica | Plástica | Automotriz | Energía | Química |
-                  Medica | Petrolera | Cementos | Papelera | Alimenticia |
-                  Entretenimiento | Forestal | Agricultura | Construcción |
-                  Pesca | Minería | Imprenta | Empaquetadoras | Embotelladoras |
-                  Transportadores
+                  Steel | Aluminum | Metal Forming | Plastic | Automotive | Energy | Chemical |
+                  Medical | Petroleum | Cement | Paper | Food |
+                  Entertainment | Forestal | Agricultural | Construction |
+                  Fishing | Mining | Packaging | Printing |  | Bottling |
+                  Transportation
                 </p>
               </td>
             </tr>
@@ -630,7 +628,7 @@ export async function POST(req) {
           >
             <tr>
               <td colspan="3">
-                <p style="color: grey; margin-bottom: 0.5em">Contacto</p>
+                <p style="color: grey; margin-bottom: 0.5em">Contact</p>
               </td>
             </tr>
             <tr>

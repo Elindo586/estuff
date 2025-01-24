@@ -16,7 +16,7 @@ export async function GET(_, { params }) {
 
   const date = ` ${year}/${month}/${days} at ${hour}:${minutes}:${seconds}s`;
 
-  await sql`INSERT INTO ehost (email, campId, date) VALUES ( ${email}, ${campId}, ${date});`;
+  await sql`INSERT INTO host1 (email, campId, date) VALUES ( ${email}, ${campId}, ${date});`;
 
   const htmlResponse = `
  <!DOCTYPE html>

@@ -32,7 +32,7 @@ export async function POST(req) {
 
   const email = body.email;
   const title = body.id;
-  const campId = "1-20-25-eu";
+  const campId = "1-24-25-portuguese";
 
   const d = new Date();
   const year = d.getFullYear();
@@ -40,7 +40,7 @@ export async function POST(req) {
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
-    subject: `Bombas de paletas y repuestos | Controles Electromecánicos  | ${title}`,
+    subject: `Vane pumps | Servo Motor Controllers  | Linear Guides | ${title}`,
     text: ``,
     html: `
 <!DOCTYPE html>
@@ -117,7 +117,7 @@ export async function POST(req) {
         <td style="text-align: center">
           <p style="margin-bottom: 0.2em; margin-top: 0.1em">
             If you can't see images,
-            <a href="https://email.tu.biz/my/host1/${email}/${campId}/${title}"
+            <a href="https://email.tu.biz/my/ehost/${email}/${campId}/${title}"
               >click here</a
             >
             to view it on the web.

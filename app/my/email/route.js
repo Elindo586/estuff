@@ -28,7 +28,7 @@ export async function POST(req) {
   const email = body.email;
   const title = body.id;
   const quote = body.quote;
-  const campId = "q1-8-25";
+  const campId = "q2-5-25";
   // const img = body.img;
 
   const textArray = quote;

@@ -1,7 +1,9 @@
-import { sql } from "@vercel/postgres";
+// import { sql } from "@vercel/postgres";
+import { neon } from '@neondatabase/serverless';
 import { NextResponse } from "next/server";
 
 export async function GET(request) {
+  const sql = neon(`${process.env.DATABASE_URL}`);
   try {
    const result = 
     await sql`SELECT *

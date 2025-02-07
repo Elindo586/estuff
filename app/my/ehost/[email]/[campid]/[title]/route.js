@@ -174,10 +174,10 @@ export async function GET(_, { params }) {
                 style="text-align: center; padding: 2%; box-sizing: border-box"
               >
                 <a
-                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/vq-pump"
+                  href="https://email.tu.biz/my/email-follow/${email}/${campId}/charlynn"
                 >
                   <img
-                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fvq-pump.png&w=1920&q=75"
+                    src="https://email.tu.biz/_next/image?url=%2Fimages%2Fproducts%2Fcharlynn263.png&w=1920&q=75"
                     alt="Rexroth pump replacement"
                     style="
                       max-width: 100%;
@@ -198,7 +198,7 @@ export async function GET(_, { params }) {
                 "
               >
                 <p style="color: #3a6b83">
-                 • We provide a full range of vane, piston, gear pumps, pressure and control valves. 
+                 • We provide a full range of hydraulic motor, pumps, and valves. 
                 </p>
                 <p style="color: #3a6b83">
                    • We offer spare parts as well as complete units to replace popular hydraulic brand names.
@@ -227,7 +227,7 @@ export async function GET(_, { params }) {
                     >
                       <p style="margin: 0.5em">
                         <a
-                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/vq-pump"
+                          href="https://email.tu.biz/my/email-follow/${email}/${campId}/charlynn"
                           style="
                             display: inline-block;
                             color: white;
@@ -334,17 +334,17 @@ export async function GET(_, { params }) {
                 "
               >
                 <p style="color: #3a6b83">
-                  We handle a large variety to interchange with all brands.
+                  • We handle a large variety to interchange with all brands.
                 </p>
                 <p style="color: #3a6b83">
-                  <b>Replacements for:</b>: linear guides, blocks, complete assemblies.
+                  • <b>Replacements for:</b>: linear guides, blocks, complete assemblies.
                 </p>
                 <p style="color: #3a6b83">
-                  Hight quality prouducts with competitive prices and fast delivery.
+                  • Hight quality prouducts with competitive prices and fast delivery.
                 </p>
                 <br />
                 <p style="color: #3a6b83; margin-top: 1em">
-                  <b> Technical Support</b> for all applications.
+                  • <b> Technical Support</b> for all applications.
                 </p>
 
                 <!-- Button links -->
@@ -468,17 +468,17 @@ export async function GET(_, { params }) {
                 <br />
                 <p style="color: #3a6b83"> Do you have an old machine with an old controller? We can refrofit your machine's controllers with new alternatives. Applications include:</p>
                 <p style="color: #3a6b83">
-                  Positioning.
+                  • Positioning.
                 </p>
                 <p style="color: #3a6b83">
-                indexation.
+                • indexation.
                 </p>
                 <p style="color: #3a6b83">
-                    syncronization.
+                  • syncronization.
                 </p>
 
                 <p style="color: #3a6b83">
-                    Acceleration / Deceleration
+                  • Acceleration / Deceleration
                 </p> </br>
                 <p style="color: #3a6b83">
                     Complete control solutions for servo-motors.
@@ -713,7 +713,6 @@ export async function GET(_, { params }) {
     </table>
   </body>
 </html>
-
 
   `;
 

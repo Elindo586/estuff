@@ -48,6 +48,12 @@ export async function GET(request, { params }) {
     case "fluidyne":
       redirectUrl.href = "https://www.fluidynefp.com/Literature.aspx";
       break;
+      case "vq-pump":
+      redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
+      break;
+      case "charlynn":
+      redirectUrl.href = "https://www.tu.biz/products/geroler-motors";
+      break;
     case "won-linear":
       redirectUrl.href = "http://wonst.co.kr/english/product/product_main.php";
       break;
@@ -65,9 +71,7 @@ export async function GET(request, { params }) {
       redirectUrl.href =
         "https://www.iis-servo.com/products/emerald-automation-controller/";
       break;
-    case "vq-pump":
-      redirectUrl.href = "https://www.tu.biz/products/vane-pumps";
-      break;
+   
     default:
       // Handle unknown products with a default redirect
       redirectUrl.href = "https://www.tu.biz";

@@ -40,7 +40,7 @@ export async function POST(req) {
   const mailData = {
     from: { name: "Edgar Lindo", address: process.env.EMAIL2 },
     to: email,
-    subject: `Vane pumps | Servo Motor Controllers  | Linear Guides | ${title}`,
+    subject: `Hydraulic Motors | Servo Controllers  | Linear Guides | ${title}`,
     text: ``,
     html: `
 <!DOCTYPE html>
